@@ -20,7 +20,7 @@ const Navbar = () => {
             <span className="text-primary">Bathurst</span>Accommodation
           </a>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.label}
