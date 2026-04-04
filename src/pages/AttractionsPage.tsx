@@ -215,6 +215,13 @@ const AttractionsPage = () => {
             </div>
           </div>
         </div>
+
+        <FAQSection
+          faqs={attractionsFaqs}
+          structuredData={attractionsFaqSchema}
+          title="Attractions FAQs"
+          subtitle="Common questions about things to see and do in Bathurst."
+        />
       </main>
       <Footer />
     </div>
