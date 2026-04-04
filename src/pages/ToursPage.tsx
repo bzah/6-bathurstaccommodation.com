@@ -1,0 +1,222 @@
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Star, Clock, MapPin, ArrowRight } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
+
+const tourHighlights = [
+  {
+    title: "Mount Panorama Circuit Drive",
+    description: "Drive the full 6.2km circuit yourself or join a guided tour to learn the history behind every corner — from Hell Corner to The Chase.",
+    duration: "1–2 hours",
+    rating: "4.8",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=600&q=80",
+    tags: ["Motorsport", "Must-Do"],
+  },
+  {
+    title: "Bathurst Goldfields Experience",
+    description: "Pan for gold, explore a recreated 1850s mining camp, and learn about the gold rush that transformed the region. Interactive fun for all ages.",
+    duration: "2–3 hours",
+    rating: "4.6",
+    image: "https://images.unsplash.com/photo-1533929736562-6c5765f93891?auto=format&fit=crop&w=600&q=80",
+    tags: ["Heritage", "Family"],
+  },
+  {
+    title: "Central West Wine Trail",
+    description: "Visit cellar doors across the Orange and Mudgee wine regions. Sample award-winning cool-climate wines with gourmet food pairings.",
+    duration: "Full day",
+    rating: "4.9",
+    image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=600&q=80",
+    tags: ["Wine", "Day Trip"],
+  },
+  {
+    title: "Heritage Walking Tour",
+    description: "A guided walk through Bathurst's heritage precinct, visiting 25+ sandstone buildings, churches, and landmarks that tell 200 years of history.",
+    duration: "2 hours",
+    rating: "4.7",
+    image: "https://images.unsplash.com/photo-1544967082-d9d25d867d66?auto=format&fit=crop&w=600&q=80",
+    tags: ["History", "Walking"],
+  },
+  {
+    title: "Sunrise Hot Air Ballooning",
+    description: "Float over the stunning Central West countryside at dawn. See rolling hills, farmland, and Bathurst from above in this unforgettable experience.",
+    duration: "3–4 hours",
+    rating: "5.0",
+    image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80",
+    tags: ["Adventure", "Premium"],
+  },
+  {
+    title: "Abercrombie Caves Tour",
+    description: "Explore limestone caves featuring the largest natural arch in the southern hemisphere. Guided tours available with stunning underground formations.",
+    duration: "Half day",
+    rating: "4.7",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=80",
+    tags: ["Nature", "Adventure"],
+  },
+];
+
+const ToursPage = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://widget.getyourguide.com/dist/pa.umd.production.min.js";
+    script.async = true;
+    script.dataset.gyg_partner_id = "0IQTGX8";
+    script.dataset.gyg_number_of_items = "8";
+    script.dataset.gyg_widget = "activities";
+    script.dataset.gyg_locale_code = "en-US";
+    script.dataset.gyg_currency = "AUD";
+    script.dataset.gyg_q = "Bathurst";
+
+    const container = document.getElementById("gyg-tours-widget");
+    if (container) {
+      container.innerHTML = "";
+      container.appendChild(script);
+    }
+
+    return () => {
+      if (container) container.innerHTML = "";
+    };
+  }, []);
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    name: "Bathurst Tours & Experiences",
+    description: "Book the best tours, activities, and experiences in Bathurst NSW. From Mount Panorama drives to wine trails and hot air ballooning.",
+    url: `${window.location.origin}/tours`,
+    touristType: ["Adventure tourists", "Cultural tourists", "Food tourists"],
+  };
+
+  return (
+    <div className="min-h-screen">
+      <SEOHead
+        title="Bathurst Tours & Experiences | Book Activities in Bathurst NSW"
+        description="Book the best tours and experiences in Bathurst NSW. Wine trails, Mount Panorama drives, heritage walks, hot air ballooning, and more. Book online today."
+        canonicalPath="/tours"
+        structuredData={structuredData}
+      />
+      <Navbar />
+      <main className="pt-24 pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Hero */}
+          <div className="text-center mb-16">
+            <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+              Tours & Experiences
+            </span>
+            <h1 className="text-3xl md:text-5xl font-heading text-foreground mb-5">
+              Bathurst Tours & Activities
+            </h1>
+            <p className="text-muted-foreground max-w-3xl mx-auto font-body text-lg leading-relaxed">
+              From racing heritage to wine trails and sunrise balloon flights — discover the best
+              ways to experience Bathurst and the Central West.
+            </p>
+          </div>
+
+          {/* Tour Highlights */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            {tourHighlights.map((tour) => (
+              <Card
+                key={tour.title}
+                className="group overflow-hidden border-border/50 bg-card hover:shadow-[var(--shadow-elevated)] transition-all duration-300"
+              >
+                <div className="relative overflow-hidden aspect-[16/10]">
+                  <img
+                    src={tour.image}
+                    alt={tour.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-3 left-3 flex gap-2">
+                    {tour.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-2 py-0.5 rounded-full bg-background/90 text-foreground text-xs font-medium backdrop-blur-sm"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <CardContent className="p-5">
+                  <div className="flex items-center justify-between text-xs text-muted-foreground mb-3">
+                    <span className="flex items-center gap-1">
+                      <Clock size={12} />
+                      {tour.duration}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Star size={12} className="text-primary fill-primary" />
+                      {tour.rating}
+                    </span>
+                  </div>
+                  <h2 className="font-heading text-lg text-foreground mb-2">{tour.title}</h2>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{tour.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Booking Widget */}
+          <div className="mb-20">
+            <div className="text-center mb-10">
+              <h2 className="font-heading text-2xl md:text-3xl text-foreground mb-3">
+                Book Your Bathurst Experience
+              </h2>
+              <p className="text-muted-foreground font-body max-w-xl mx-auto">
+                Browse availability and book directly. Instant confirmation on most experiences.
+              </p>
+            </div>
+            <div
+              id="gyg-tours-widget"
+              className="min-h-[300px] flex items-center justify-center"
+            >
+              <p className="font-body text-muted-foreground">Loading tours...</p>
+            </div>
+            <div className="text-center mt-8">
+              <a
+                href="https://www.getyourguide.com/bathurst-l97232/?partner_id=0IQTGX8&utm_medium=online_publisher"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-3 rounded-lg bg-primary text-primary-foreground font-body font-medium hover:opacity-90 transition-opacity"
+              >
+                View All Bathurst Tours →
+              </a>
+            </div>
+          </div>
+
+          {/* Internal Links */}
+          <div className="rounded-xl bg-muted/50 border border-border p-8 text-center">
+            <h2 className="font-heading text-2xl text-foreground mb-3">Plan Your Full Trip</h2>
+            <p className="text-muted-foreground font-body mb-6 max-w-xl mx-auto">
+              Find accommodation and discover more of what Bathurst has to offer.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                to="/accommodation-types"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity"
+              >
+                Find Accommodation <ArrowRight size={14} />
+              </Link>
+              <Link
+                to="/attractions"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-primary text-primary font-medium text-sm hover:bg-primary/5 transition-colors"
+              >
+                See Attractions <ArrowRight size={14} />
+              </Link>
+              <Link
+                to="/blog"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-border text-muted-foreground font-medium text-sm hover:text-foreground transition-colors"
+              >
+                Travel Blog <ArrowRight size={14} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default ToursPage;
