@@ -4,6 +4,40 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import FAQSection from "@/components/FAQSection";
+
+const attractionsFaqs = [
+  {
+    question: "Can you drive the Mount Panorama Circuit for free?",
+    answer: "Yes! The Mount Panorama Circuit is a public road open to regular traffic when racing events are not being held. You can drive the full 6.213 km circuit for free at any time. The speed limit is 60 km/h and the road is one-way. It's one of the most unique driving experiences in Australia.",
+  },
+  {
+    question: "Is the Bathurst Goldfields suitable for children?",
+    answer: "Absolutely! The Bathurst Goldfields is one of the most popular family attractions in the region. Children love panning for real gold and exploring the recreated 1850s mining camp. Kids under 5 enter free, and most families spend 2-3 hours at the site.",
+  },
+  {
+    question: "What are the best free things to do in Bathurst?",
+    answer: "Free activities include driving Mount Panorama Circuit, visiting the Bathurst Regional Art Gallery, strolling through Machattie Park and gardens, walking the Heritage Trail through the CBD, and bushwalking at Evans Crown Nature Reserve and Ben Chifley Dam.",
+  },
+  {
+    question: "Are there wineries near Bathurst NSW?",
+    answer: "Yes, the Bathurst region is a gateway to excellent cool-climate wine regions. Local cellar doors include Renzaglia Wines, Huntington Estate, and Donalds Range Estate. The nearby Orange wine region (40 min drive) is renowned for its chardonnay and shiraz, with dozens of cellar doors to visit.",
+  },
+  {
+    question: "How many days do you need to explore Bathurst?",
+    answer: "A weekend (2-3 days) is ideal for seeing the main highlights including Mount Panorama, museums, and a winery visit. For a more relaxed pace covering nature reserves, heritage sites, and the surrounding wine regions, 4-5 days allows you to explore without rushing.",
+  },
+];
+
+const attractionsFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: attractionsFaqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
+};
 
 const attractions = [
   {
@@ -94,7 +128,7 @@ const AttractionsPage = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Top Attractions in Bathurst NSW | Things to See & Do"
-        description="Discover the best attractions in Bathurst NSW. From Mount Panorama and gold-rush heritage to wineries, gardens, and nature reserves. Plan your visit today."
+        description="Explore 9 top-rated attractions in Bathurst NSW — Mount Panorama Circuit, gold-rush heritage, wineries, Machattie Park, Abercrombie House & nature reserves. Free & paid activities for families."
         canonicalPath="/attractions"
         structuredData={structuredData}
       />
@@ -181,6 +215,13 @@ const AttractionsPage = () => {
             </div>
           </div>
         </div>
+
+        <FAQSection
+          faqs={attractionsFaqs}
+          structuredData={attractionsFaqSchema}
+          title="Attractions FAQs"
+          subtitle="Common questions about things to see and do in Bathurst."
+        />
       </main>
       <Footer />
     </div>

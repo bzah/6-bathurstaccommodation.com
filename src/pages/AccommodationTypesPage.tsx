@@ -4,6 +4,40 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import FAQSection from "@/components/FAQSection";
+
+const accommodationFaqs = [
+  {
+    question: "What is the cheapest accommodation in Bathurst?",
+    answer: "Caravan parks and camping grounds offer the most affordable options, starting from around $30 per night for unpowered sites. Budget motels start from around $90 per night. During off-peak periods (outside major events), you can find great deals across all accommodation types.",
+  },
+  {
+    question: "Which motels are closest to Mount Panorama?",
+    answer: "Rydges Mount Panorama is the closest hotel, located right at the circuit with mountain views. Several motels along Panorama Avenue and Conrod Straight are within 2-5 minutes' drive of the circuit entrance, including Panorama City Motor Lodge and Bathurst Explorer Motel.",
+  },
+  {
+    question: "Are there pet-friendly accommodation options in Bathurst?",
+    answer: "Yes, several motels and caravan parks in Bathurst welcome pets. Some Airbnb properties also allow dogs. It's always best to confirm pet policies directly with the property before booking, as rules vary regarding size, breed, and number of pets allowed.",
+  },
+  {
+    question: "Can I find accommodation during the Bathurst 1000?",
+    answer: "Accommodation during the Bathurst 1000 (October) is extremely limited and books out 6-12 months in advance. Many properties enforce minimum stays and premium pricing. If Bathurst is fully booked, consider nearby towns like Orange (40 min), Blayney (25 min), or Lithgow (50 min).",
+  },
+  {
+    question: "What amenities do Bathurst motels typically offer?",
+    answer: "Most Bathurst motels include free parking, Wi-Fi, air conditioning, tea/coffee facilities, and en-suite bathrooms. Many also offer continental breakfast, BBQ areas, and swimming pools. Higher-end options include on-site restaurants, room service, and conference facilities.",
+  },
+];
+
+const accommodationFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: accommodationFaqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
+};
 
 const accommodationTypes = [
   {
@@ -85,7 +119,7 @@ const AccommodationTypesPage = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Bathurst Accommodation Types | Motels, Hotels, Camping & More"
-        description="Compare accommodation types in Bathurst NSW. Find motels, hotels, caravan parks, Airbnb rentals, and B&Bs near Mount Panorama. Prices, features, and booking tips."
+        description="Compare all accommodation types in Bathurst NSW — motels from $90/night, hotels, caravan parks, Airbnb rentals & B&Bs near Mount Panorama. Prices, features & race-week booking tips."
         canonicalPath="/accommodation-types"
         structuredData={structuredData}
       />
@@ -198,6 +232,13 @@ const AccommodationTypesPage = () => {
             </div>
           </div>
         </div>
+
+        <FAQSection
+          faqs={accommodationFaqs}
+          structuredData={accommodationFaqSchema}
+          title="Accommodation FAQs"
+          subtitle="Common questions about finding places to stay in Bathurst."
+        />
       </main>
       <Footer />
     </div>
