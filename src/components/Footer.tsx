@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-foreground border-t border-background/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-heading text-xl text-background mb-4">
               <span className="text-primary">Bathurst</span>Accommodation
@@ -14,33 +16,56 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-heading text-lg text-background mb-4">Quick Links</h4>
+            <h4 className="font-heading text-lg text-background mb-4">Explore</h4>
             <ul className="space-y-2">
               {[
-                { label: "Accommodation", href: "#accommodation" },
-                { label: "Attractions", href: "#attractions" },
-                { label: "Activities", href: "#activities" },
-                { label: "Book Tours", href: "#tours" },
+                { label: "Accommodation", to: "/accommodation-types" },
+                { label: "Attractions", to: "/attractions" },
+                { label: "Tours & Activities", to: "/tours" },
+                { label: "Travel Blog", to: "/blog" },
               ].map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="font-body text-sm text-background/60 hover:text-primary transition-colors"
-                  >
+                  <Link to={link.to} className="font-body text-sm text-background/60 hover:text-primary transition-colors">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
           <div>
-            <h4 className="font-heading text-lg text-background mb-4">Useful Info</h4>
-            <ul className="space-y-2 font-body text-sm text-background/60">
-              <li>📍 Bathurst, NSW 2795, Australia</li>
-              <li>🚗 3 hours west of Sydney</li>
-              <li>🚂 NSW TrainLink from Sydney Central</li>
-              <li>✈️ Nearest airport: Bathurst Airport (BHS)</li>
+            <h4 className="font-heading text-lg text-background mb-4">Company</h4>
+            <ul className="space-y-2">
+              {[
+                { label: "About Us", to: "/about" },
+                { label: "Contact", to: "/contact" },
+                { label: "Parents Info", to: "/parents-info" },
+              ].map((link) => (
+                <li key={link.label}>
+                  <Link to={link.to} className="font-body text-sm text-background/60 hover:text-primary transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-heading text-lg text-background mb-4">Legal</h4>
+            <ul className="space-y-2">
+              {[
+                { label: "Privacy Policy", to: "/privacy-policy" },
+                { label: "Terms of Service", to: "/terms" },
+                { label: "Cookie Policy", to: "/cookie-policy" },
+                { label: "DMCA", to: "/dmca" },
+                { label: "Legal Notice", to: "/legal-notice" },
+              ].map((link) => (
+                <li key={link.label}>
+                  <Link to={link.to} className="font-body text-sm text-background/60 hover:text-primary transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
