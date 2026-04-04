@@ -4,6 +4,7 @@ import WhyVisit from "@/components/WhyVisit";
 import Attractions from "@/components/Attractions";
 import Activities from "@/components/Activities";
 import BookingWidget from "@/components/BookingWidget";
+import Blog from "@/components/Blog";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
 
@@ -16,6 +17,7 @@ const Index = () => {
       <Attractions />
       <Activities />
       <BookingWidget />
+      <Blog />
       <CtaSection />
       <Footer />
     </div>
