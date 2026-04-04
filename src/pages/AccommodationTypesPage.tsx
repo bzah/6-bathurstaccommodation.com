@@ -119,7 +119,7 @@ const AccommodationTypesPage = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Bathurst Accommodation Types | Motels, Hotels, Camping & More"
-        description="Compare accommodation types in Bathurst NSW. Find motels, hotels, caravan parks, Airbnb rentals, and B&Bs near Mount Panorama. Prices, features, and booking tips."
+        description="Compare all accommodation types in Bathurst NSW — motels from $90/night, hotels, caravan parks, Airbnb rentals & B&Bs near Mount Panorama. Prices, features & race-week booking tips."
         canonicalPath="/accommodation-types"
         structuredData={structuredData}
       />

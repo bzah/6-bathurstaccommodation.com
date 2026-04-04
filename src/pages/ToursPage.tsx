@@ -127,7 +127,7 @@ const ToursPage = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Bathurst Tours & Experiences | Book Activities in Bathurst NSW"
-        description="Book the best tours and experiences in Bathurst NSW. Wine trails, Mount Panorama drives, heritage walks, hot air ballooning, and more. Book online today."
+        description="Book top-rated Bathurst tours & activities — wine trails, Mount Panorama circuit drives, heritage walks, hot air ballooning & Abercrombie Caves. Instant confirmation available."
         canonicalPath="/tours"
         structuredData={structuredData}
       />

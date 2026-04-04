@@ -128,7 +128,7 @@ const AttractionsPage = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Top Attractions in Bathurst NSW | Things to See & Do"
-        description="Discover the best attractions in Bathurst NSW. From Mount Panorama and gold-rush heritage to wineries, gardens, and nature reserves. Plan your visit today."
+        description="Explore 9 top-rated attractions in Bathurst NSW — Mount Panorama Circuit, gold-rush heritage, wineries, Machattie Park, Abercrombie House & nature reserves. Free & paid activities for families."
         canonicalPath="/attractions"
         structuredData={structuredData}
       />
