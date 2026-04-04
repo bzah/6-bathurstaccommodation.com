@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
 
         {isOpen && (
-          <div className="md:hidden pb-4 border-t border-border mt-2 pt-4">
+          <div className="lg:hidden pb-4 border-t border-border mt-2 pt-4">
             {navLinks.map((link) => (
               <a
                 key={link.label}
