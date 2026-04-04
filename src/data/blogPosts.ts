@@ -226,4 +226,303 @@ Bathurst hosts regular farmers' markets, craft fairs, and cultural festivals thr
 Bathurst is a 3-hour drive from Sydney via the Great Western Highway. The best times to visit are autumn (March–May) for pleasant weather and golden foliage, and spring (September–November) for wildflowers and mild temperatures. Allow at least 2–3 days to explore the highlights listed above.
     `,
   },
+  {
+    title: "The Perfect Bathurst Weekend Getaway: A 2-Day Itinerary",
+    excerpt:
+      "Escape the city for a weekend in Bathurst. This 2-day itinerary covers the best food, sights, and experiences for a relaxing yet adventurous short break in the Central West.",
+    metaDescription:
+      "Plan the perfect Bathurst weekend getaway with this 2-day itinerary. Discover the best restaurants, attractions, wineries, and scenic drives in NSW's oldest inland city.",
+    date: "2026-04-02",
+    slug: "bathurst-weekend-getaway",
+    readTime: "7 min read",
+    author: "Bathurst Accommodation Team",
+    image:
+      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Weekend Getaway", "Itinerary"],
+    content: `
+## The Perfect Bathurst Weekend Getaway
+
+Looking for a weekend escape from Sydney or Canberra? Bathurst is just three hours from Sydney and offers an ideal mix of heritage, nature, food, and adventure. Here's how to make the most of two unforgettable days.
+
+### Day 1: Heritage, Culture & Fine Dining
+
+**Morning — Arrive and Explore the City Centre**
+
+Start your weekend with a coffee at one of Bathurst's excellent cafés on George Street. Then take a self-guided walk along the Heritage Trail, passing sandstone courthouses, historic churches, and the beautifully restored post office.
+
+**Late Morning — Australian Fossil & Mineral Museum**
+
+Spend an hour at this fascinating museum. The Somerville Collection of fossils and minerals is world-class, and the full-size T-Rex replica is a showstopper.
+
+**Lunch — Local Dining**
+
+Bathurst's food scene punches well above its weight. Try a long lunch at one of the city's farm-to-table restaurants, where seasonal menus showcase Central West produce.
+
+**Afternoon — Machattie Park & Bathurst Regional Art Gallery**
+
+Stroll through the heritage-listed gardens, then pop into the free art gallery to see Australian works and rotating exhibitions.
+
+**Evening — Dinner and Drinks**
+
+End the day at a local restaurant or gastropub. Bathurst has several excellent options for everything from woodfired pizza to fine-dining degustation menus.
+
+### Day 2: Racing, Wine & Nature
+
+**Morning — Mount Panorama Circuit**
+
+Drive the full 6.2 km circuit on public roads. Stop at the lookout near Skyline for panoramic views across Bathurst and the valley. Visit the National Motor Racing Museum at the base.
+
+**Late Morning — Winery Tour**
+
+Head out of town to visit cellar doors at Renzaglia Wines or Huntington Estate. The cool-climate wines of the Central West region are outstanding — especially the chardonnay and shiraz.
+
+**Lunch — Vineyard Lunch**
+
+Many cellar doors offer platters or light lunches paired with their wines. A leisurely lunch among the vines is the perfect weekend indulgence.
+
+**Afternoon — Evans Crown Nature Reserve**
+
+If you're up for a short bushwalk, Evans Crown offers dramatic granite formations and sweeping views. The trails are well-marked and suit most fitness levels. Alternatively, drive to Ben Chifley Dam for a scenic picnic.
+
+**Late Afternoon — Head Home**
+
+Hit the road back to Sydney or Canberra feeling refreshed and already planning your next visit.
+
+### Where to Stay
+
+For a weekend getaway, consider a boutique B&B or heritage guesthouse for extra character. Motels along the main roads offer great value, while Airbnb options range from cosy cottages to modern apartments. Check our accommodation guide for the full list.
+
+### Best Time for a Weekend Getaway
+
+- **Autumn (March–May)**: Golden foliage, mild days, harvest season at wineries
+- **Spring (September–November)**: Wildflowers, pleasant weather, fewer crowds
+- **Winter (June–August)**: Cosy fireside retreats, winter menus, misty mornings
+- **Summer (December–February)**: Long daylight hours, outdoor dining, dam swimming
+
+### Getting There
+
+Bathurst is 200 km west of Sydney via the Great Western Highway (M4/A32). NSW TrainLink also runs daily services from Sydney Central. The nearest airport is Bathurst Airport (BHS) with regional connections.
+    `,
+  },
+  {
+    title: "Family Holidays in Bathurst NSW: The Ultimate Guide for Kids & Parents",
+    excerpt:
+      "Bathurst is a fantastic family holiday destination with gold-panning, museums, nature reserves, and Mount Panorama. Here's everything families need to know for a perfect trip.",
+    metaDescription:
+      "Plan the perfect family holiday in Bathurst NSW. Kid-friendly attractions, family accommodation, outdoor adventures, and tips for travelling with children to Australia's oldest inland city.",
+    date: "2026-03-20",
+    slug: "family-holidays-bathurst-nsw",
+    readTime: "9 min read",
+    author: "Bathurst Accommodation Team",
+    image:
+      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Family", "Travel Guide"],
+    content: `
+## Family Holidays in Bathurst NSW
+
+Bathurst is one of the best family holiday destinations in regional NSW. With hands-on museums, outdoor adventures, historic attractions, and plenty of space for kids to run around, it's the kind of place where parents relax and children never get bored.
+
+### Top Family-Friendly Attractions
+
+**1. Bathurst Goldfields**
+
+This is the number-one attraction for families. Kids can pan for real gold, explore a recreated 1850s mining camp, and learn about the gold rush through interactive displays. Most families spend 2–3 hours here, and children under 5 are free.
+
+**2. Australian Fossil & Mineral Museum**
+
+What kid doesn't love dinosaurs? The full-size T-Rex skeleton replica is a guaranteed hit, and the fossil and mineral collections are genuinely fascinating for all ages. Allow about an hour.
+
+**3. Mount Panorama Circuit**
+
+Drive the famous racetrack on public roads — kids love the elevation changes and hairpin bends. Stop at the National Motor Racing Museum to see racing cars up close. Entry is affordable and the museum is stroller-friendly.
+
+**4. Machattie Park**
+
+A beautiful park in the centre of town with wide open spaces, shaded paths, and a playground. Perfect for a picnic lunch or a break between activities.
+
+**5. Ben Chifley Dam**
+
+A scenic bush setting with easy walking trails, picnic shelters, and BBQ facilities. Kids can spot birds and explore nature while parents enjoy the peaceful surroundings.
+
+### Best Family Accommodation
+
+When travelling with children, the right accommodation makes all the difference. Bathurst offers several family-friendly options:
+
+- **Big4 Bathurst Holiday Park** — Cabins, powered sites, pool, playground, jumping pillow, and camp kitchen. The best option for families who love caravan parks.
+- **Bathurst Panorama Holiday Park** — Close to Mount Panorama with family cabins and a communal BBQ area.
+- **Self-contained Airbnbs** — Houses and apartments with full kitchens, laundry, and yards. Great for families who want space and independence.
+- **Family rooms at motels** — Many Bathurst motels offer interconnecting rooms or family suites with extra beds and microwaves.
+
+### Rainy Day Activities
+
+Bathurst weather can be unpredictable, especially in autumn and winter. Here's what to do when it rains:
+
+- **Fossil & Mineral Museum** — An excellent indoor option
+- **Bathurst Regional Art Gallery** — Free entry, family workshops on weekends
+- **Local cinemas** — Bathurst has a modern cinema complex
+- **Indoor play centres** — Check local listings for the latest options
+- **Heritage walking tour** — Explore under cover in the historic arcades and buildings
+
+### Eating Out with Kids
+
+Bathurst is a family-friendly town with plenty of casual dining options:
+
+- Several cafés have kids' menus and highchairs
+- Pub bistros offer generous portions at reasonable prices
+- Bakeries and takeaway shops are plentiful along the main streets
+- Pack a picnic from the weekend farmers' market for a budget-friendly lunch at one of the parks
+
+### Planning Tips for Families
+
+- **Duration**: Allow at least 2–3 nights to see the main attractions without rushing
+- **Best time**: School holidays in autumn (April) or spring (September–October) offer mild weather and fewer crowds than summer
+- **Driving**: Bathurst is a 3-hour drive from Sydney — break the journey at Lithgow or the Blue Mountains
+- **Packing**: Bring layers. Bathurst can be 10°C cooler than Sydney, especially in the mornings and evenings
+- **Budget**: Many attractions are free or low-cost. A family of four can enjoy a full day for under $100
+
+### Day Trip Ideas from Bathurst
+
+- **Abercrombie Caves** (1 hour south) — Guided cave tours through stunning limestone formations, including the largest natural arch in the southern hemisphere
+- **Orange** (40 min west) — A foodie town with orchards, wineries, and the excellent Orange Botanic Gardens
+- **Hill End** (1 hour north) — A historic gold-mining village with bush camping and heritage walks
+- **Sofala** (40 min north) — Australia's oldest surviving gold-rush town, with a charming pub and antique shops
+
+### Final Thoughts
+
+Bathurst is the kind of family destination you'll return to again and again. It's affordable, rich in history and nature, and genuinely welcoming to families with kids of all ages. Start planning your trip today.
+    `,
+  },
+  {
+    title: "Bathurst in Winter: Cosy Retreats & Cold-Weather Activities",
+    excerpt:
+      "Don't overlook Bathurst in the cooler months. From fireside dining to misty morning walks and heritage attractions, winter adds a special charm to this inland city.",
+    metaDescription:
+      "Discover why Bathurst NSW is a great winter destination. Cosy accommodation, fireside dining, heritage attractions, and peaceful nature walks in the Central West.",
+    date: "2026-03-05",
+    slug: "bathurst-in-winter",
+    readTime: "6 min read",
+    author: "Bathurst Accommodation Team",
+    image:
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Winter", "Seasonal"],
+    content: `
+## Bathurst in Winter: Why the Cold Season is Worth a Visit
+
+While summer and autumn get most of the attention, Bathurst in winter has a charm all its own. Fewer crowds, misty mornings over the valley, and the warmth of country hospitality make it an ideal off-peak escape.
+
+### Winter Weather in Bathurst
+
+Bathurst sits at around 700 metres elevation, making it noticeably cooler than Sydney. Winter temperatures range from 0–10°C overnight to 10–15°C during the day. Frost is common, and occasional fog adds atmosphere to the heritage streetscapes. Pack warm layers and you'll be rewarded with crisp, clear days perfect for exploring.
+
+### Cosy Accommodation
+
+Winter is the time to book a stay with a fireplace or heated room:
+
+- **Heritage B&Bs** — Several offer fireplaces, electric blankets, and hearty cooked breakfasts
+- **Boutique guesthouses** — Intimate settings with warm interiors and personal service
+- **Self-contained cottages** — Cook your own meals, curl up with a book, and enjoy the quiet
+
+### Fireside Dining
+
+Bathurst's restaurants embrace winter with seasonal menus, slow-cooked dishes, and local wines:
+
+- Woodfired pizzas and craft beer at local pubs
+- Degustation menus featuring Central West lamb, root vegetables, and winter greens
+- Hot chocolate and pastries at the town's best cafés
+- Wine tastings by the fire at nearby cellar doors
+
+### Winter Activities
+
+**Heritage Attractions**
+Museums, galleries, and historic homes are perfect in cold weather. Spend a morning at the Fossil & Mineral Museum, then tour Abercrombie House in the afternoon.
+
+**Scenic Drives**
+The countryside around Bathurst is stunning in winter. Drive to Orange through golden farmland, or head to Hill End for a glimpse of gold-rush history in the mist.
+
+**Mount Panorama**
+Drive the circuit on a quiet winter weekday and you'll likely have it almost to yourself. The views from Skyline are especially dramatic on frosty mornings.
+
+**Bushwalking**
+Winter is ideal for walking — cool temperatures make trails at Evans Crown and Ben Chifley Dam more comfortable than in summer heat.
+
+### Winter Events
+
+Keep an eye out for seasonal markets, food festivals, and cultural events in the Bathurst region during winter. The town's event calendar runs year-round.
+
+### Why Winter Works
+
+- Lower accommodation prices and better availability
+- Fewer tourists at attractions
+- The beauty of the landscape in frost and fog
+- Perfect excuse for long lunches and early dinners
+
+If you're after a peaceful, affordable getaway with genuine country character, Bathurst in winter delivers.
+    `,
+  },
+  {
+    title: "Pet-Friendly Accommodation in Bathurst: Where to Stay with Your Dog",
+    excerpt:
+      "Travelling with your furry friend? Discover pet-friendly motels, caravan parks, and holiday rentals in Bathurst NSW, plus the best dog-friendly parks and walks.",
+    metaDescription:
+      "Find pet-friendly accommodation in Bathurst NSW. Dog-friendly motels, caravan parks, Airbnbs, and the best parks and walking trails for you and your pet.",
+    date: "2026-02-10",
+    slug: "pet-friendly-accommodation-bathurst",
+    readTime: "5 min read",
+    author: "Bathurst Accommodation Team",
+    image:
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Pet-Friendly", "Accommodation"],
+    content: `
+## Pet-Friendly Accommodation in Bathurst
+
+More Australians are travelling with their pets than ever before, and Bathurst is a welcoming destination for four-legged visitors. Here's your guide to finding the right stay and the best activities for you and your dog.
+
+### Pet-Friendly Motels
+
+Several motels in Bathurst accept well-behaved dogs, typically in ground-floor rooms or designated pet-friendly units:
+
+- Always call ahead to confirm pet policies — not all rooms may be available
+- Expect a small cleaning surcharge (usually $20–$50 per stay)
+- Keep your dog on-lead in motel grounds and clean up after them
+
+### Caravan Parks
+
+Caravan parks are often the easiest option for pet owners:
+
+- **Bathurst Big4 Holiday Park** — Pet-friendly powered sites available (check cabin policies separately)
+- **Bathurst Panorama Holiday Park** — Pets welcome on camping and caravan sites
+
+Parks with open grassy areas give dogs room to stretch after a long drive.
+
+### Dog-Friendly Airbnbs and Rentals
+
+Many private holiday rentals in Bathurst welcome pets. Search for "pet-friendly" filters on Airbnb and Stayz. Look for properties with:
+
+- Fenced yards
+- Hard floors (easier cleaning)
+- Proximity to parks and walking trails
+
+### Best Dog-Friendly Parks and Walks
+
+**Machattie Park** — A beautiful on-lead park in the city centre with shaded paths and water fountains.
+
+**Ben Chifley Dam** — Bush trails where dogs can explore (on-lead in designated areas). A great spot for a morning walk.
+
+**Macquarie River Walk** — A scenic path along the river, perfect for a leisurely stroll with your dog.
+
+**Off-lead areas** — Check with Bathurst Regional Council for current off-lead dog parks and exercise areas.
+
+### Tips for Travelling with Pets to Bathurst
+
+- **Plan rest stops**: The drive from Sydney is 3 hours — stop at Lithgow for a stretch
+- **Bring supplies**: Pack food, water bowls, bedding, and waste bags
+- **Check vet locations**: Bathurst has several veterinary clinics in case of emergencies
+- **Respect other guests**: Keep noise down, especially at motels and caravan parks
+- **Summer heat**: Bathurst can get hot — never leave your pet in a parked car
+
+### Making It Work
+
+Travelling with pets takes a bit more planning, but Bathurst's relaxed country atmosphere and abundance of green spaces make it one of the easier regional destinations to visit with your dog. Book ahead, confirm policies, and enjoy the trip together.
+    `,
+  },
 ];
