@@ -247,6 +247,13 @@ const ToursPage = () => {
             </div>
           </div>
         </div>
+
+        <FAQSection
+          faqs={toursFaqs}
+          structuredData={toursFaqSchema}
+          title="Tours & Activities FAQs"
+          subtitle="Common questions about tours and experiences in Bathurst."
+        />
       </main>
       <Footer />
     </div>
