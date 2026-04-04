@@ -232,6 +232,13 @@ const AccommodationTypesPage = () => {
             </div>
           </div>
         </div>
+
+        <FAQSection
+          faqs={accommodationFaqs}
+          structuredData={accommodationFaqSchema}
+          title="Accommodation FAQs"
+          subtitle="Common questions about finding places to stay in Bathurst."
+        />
       </main>
       <Footer />
     </div>
