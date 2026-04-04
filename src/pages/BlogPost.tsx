@@ -1,5 +1,5 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { Calendar, ArrowLeft, Clock, Tag } from "lucide-react";
+import { Calendar, ArrowLeft, Clock, Tag, Facebook, Twitter, Share2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
