@@ -5,6 +5,40 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import FAQSection from "@/components/FAQSection";
+
+const toursFaqs = [
+  {
+    question: "What are the most popular tours in Bathurst?",
+    answer: "The most popular experiences include driving the Mount Panorama Circuit, the Bathurst Goldfields heritage experience, Central West wine trail tours, heritage walking tours through the CBD, sunrise hot air ballooning over the countryside, and Abercrombie Caves tours.",
+  },
+  {
+    question: "Can I book Bathurst tours online?",
+    answer: "Yes, most Bathurst tours and experiences can be booked online through platforms like GetYourGuide. Many offer instant confirmation and free cancellation. You can also book directly with local operators for personalised experiences.",
+  },
+  {
+    question: "Are there wine tours from Bathurst?",
+    answer: "Yes! Full-day wine trail tours take you through the Central West wine region, visiting cellar doors at Orange, Mudgee, and local Bathurst wineries. Tours typically include tastings at 3-5 properties with gourmet food pairings. Self-drive wine trails are also popular.",
+  },
+  {
+    question: "Is hot air ballooning available in Bathurst?",
+    answer: "Yes, sunrise hot air balloon flights operate from the Bathurst area, offering stunning views over the Central West countryside. Flights typically launch at dawn and last about an hour, with the full experience including setup and champagne breakfast taking 3-4 hours.",
+  },
+  {
+    question: "What outdoor activities are available near Bathurst?",
+    answer: "Outdoor activities include bushwalking at Evans Crown Nature Reserve, kayaking on the Macquarie River, mountain biking on local trails, fishing at Ben Chifley Dam, rock climbing, and horse riding experiences on rural properties surrounding the city.",
+  },
+];
+
+const toursFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: toursFaqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
+};
 
 const tourHighlights = [
   {
