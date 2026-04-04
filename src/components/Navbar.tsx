@@ -1,35 +1,40 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Home", href: "#" },
-  { label: "Accommodation", href: "#accommodation" },
-  { label: "Attractions", href: "#attractions" },
-  { label: "Activities", href: "#activities" },
-  { label: "Tours", href: "#tours" },
+  { label: "Home", href: "/" },
+  { label: "Accommodation", href: "/accommodation-types" },
+  { label: "Attractions", href: "/attractions" },
+  { label: "Tours", href: "/tours" },
   { label: "Blog", href: "/blog" },
 ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="font-heading text-xl text-foreground">
+          <Link to="/" className="font-heading text-xl text-foreground">
             <span className="text-primary">Bathurst</span>Accommodation
-          </a>
+          </Link>
 
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
-                className="text-sm font-body font-medium text-muted-foreground hover:text-primary transition-colors"
+                to={link.href}
+                className={`text-sm font-body font-medium transition-colors ${
+                  location.pathname === link.href
+                    ? "text-primary"
+                    : "text-muted-foreground hover:text-primary"
+                }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <a
               href="https://www.getyourguide.com/bathurst-l97232/?partner_id=0IQTGX8&utm_medium=online_publisher"
@@ -53,14 +58,18 @@ const Navbar = () => {
         {isOpen && (
           <div className="lg:hidden pb-4 border-t border-border mt-2 pt-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                to={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block py-2 text-sm font-body text-muted-foreground hover:text-primary transition-colors"
+                className={`block py-2 text-sm font-body transition-colors ${
+                  location.pathname === link.href
+                    ? "text-primary"
+                    : "text-muted-foreground hover:text-primary"
+                }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <a
               href="https://www.getyourguide.com/bathurst-l97232/?partner_id=0IQTGX8&utm_medium=online_publisher"
