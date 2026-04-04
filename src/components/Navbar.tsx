@@ -20,7 +20,7 @@ const Navbar = () => {
             <span className="text-primary">Bathurst</span>Accommodation
           </a>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.label}
@@ -42,7 +42,7 @@ const Navbar = () => {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-foreground"
+            className="lg:hidden p-2 text-foreground"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
 
         {isOpen && (
-          <div className="md:hidden pb-4 border-t border-border mt-2 pt-4">
+          <div className="lg:hidden pb-4 border-t border-border mt-2 pt-4">
             {navLinks.map((link) => (
               <a
                 key={link.label}
