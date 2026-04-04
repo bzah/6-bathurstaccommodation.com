@@ -1,0 +1,68 @@
+# ============================================================
+# BathurstAccommodation.com — Apache .htaccess
+# For Hostinger / Nginx: this file is a FALLBACK.
+# The primary fix is the Nginx vhost try_files directive.
+# ============================================================
+
+RewriteEngine On
+
+# -------------------------------------------------------
+# 1. Force HTTPS
+# -------------------------------------------------------
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# -------------------------------------------------------
+# 2. Remove www → redirect to naked domain
+# -------------------------------------------------------
+RewriteCond %{HTTP_HOST} ^www\.bathurstaccommodation\.com [NC]
+RewriteRule ^(.*)$ https://bathurstaccommodation.com/$1 [R=301,L]
+
+# -------------------------------------------------------
+# 3. Remove trailing slashes (except root "/")
+# -------------------------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [R=301,L]
+
+# -------------------------------------------------------
+# 4. Return 410 Gone for old WordPress URLs
+# -------------------------------------------------------
+RewriteRule ^wp-admin(.*)$ - [G,L]
+RewriteRule ^wp-login\.php$ - [G,L]
+RewriteRule ^wp-content(.*)$ - [G,L]
+RewriteRule ^wp-includes(.*)$ - [G,L]
+RewriteRule ^xmlrpc\.php$ - [G,L]
+RewriteRule ^wp-cron\.php$ - [G,L]
+RewriteRule ^wp-json(.*)$ - [G,L]
+
+# -------------------------------------------------------
+# 5. SPA Fallback — serve index.html for all routes
+#    that don't match a real file or directory
+# -------------------------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [L]
+
+# -------------------------------------------------------
+# 6. Security headers
+# -------------------------------------------------------
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# -------------------------------------------------------
+# 7. Cache static assets
+# -------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
