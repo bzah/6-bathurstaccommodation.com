@@ -18,7 +18,7 @@ interface SEOHeadProps {
 }
 
 const SITE_URL = "https://bathurstaccommodation.com";
-const DEFAULT_OG_IMAGE = `${SITE_URL}/favicon.png`;
+const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 const SEOHead = ({
   title,
