@@ -129,7 +129,7 @@ const Index = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Bathurst Accommodation NSW | Hotels, Motels, Airbnb & Stays Near Mount Panorama"
-        description="The complete guide to accommodation in Bathurst NSW. Compare 100+ motels, hotels, caravan parks, Airbnb rentals & B&Bs near Mount Panorama, the CBD & Central West wineries. Race-week tips, family stays, pet-friendly & luxury options."
+        description="Find the best accommodation in Bathurst NSW — motels, hotels, Airbnb, caravan parks & B&Bs near Mount Panorama. Race-week tips & local guides."
         keywords="bathurst accommodation, accommodation bathurst, accommodation bathurst nsw, places to stay in bathurst, bathurst motels, bathurst hotels, mount panorama accommodation, bathurst 1000 accommodation, caravan parks bathurst, airbnb bathurst, b&b bathurst, pet friendly bathurst, family accommodation bathurst, central west nsw stays"
         canonicalPath="/"
         structuredData={[structuredData, faqStructuredData]}
