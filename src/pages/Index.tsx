@@ -40,6 +40,34 @@ const homeSeoSections = [
       "The surrounding Central West wine region — including Orange, Mudgee, Millthorpe and Rylstone — is home to award-winning cool-climate Chardonnay, Shiraz and sparkling. Combine cellar-door visits with farm-gate produce, paddock-to-plate restaurants and weekend farmers' markets for an unforgettable food and wine break in regional NSW.",
     ],
   },
+  {
+    heading: "How to Get to Bathurst NSW",
+    body: [
+      "Bathurst is one of the easiest regional NSW destinations to reach from Sydney. The most popular option is to drive west along the M4 Motorway and Great Western Highway (A32) — a scenic 200 km / 3-hour drive that climbs through the Blue Mountains via Katoomba, Mount Victoria and Lithgow before descending into the Central Tablelands. The road is sealed all the way and there are plenty of fuel stops, lookouts and food breaks along the route.",
+      "NSW TrainLink operates the daily Bathurst Bullet rail service from Sydney Central Station, taking around 3.5 hours via Lithgow. Bathurst Airport (BHS) offers regional flights connecting to Sydney with FlyPelican. Long-distance coaches operate via Greyhound and Australia Wide Coaches. Once in Bathurst, you'll want a rental car or rideshare to reach Mount Panorama, the wineries and surrounding attractions.",
+    ],
+  },
+  {
+    heading: "Average Bathurst Accommodation Prices in 2026",
+    body: [
+      "Off-peak accommodation in Bathurst is excellent value compared to coastal NSW. Budget motels start around $90–$130 per night, mid-range hotels and B&Bs sit at $150–$250, and premium properties such as Rydges Mount Panorama and luxury homes range from $250–$500. Caravan park sites cost $30–$60 (powered) and ensuite cabins from $120. Most rates include free parking and Wi-Fi.",
+      "During the Bathurst 1000 race week in October, expect prices to rise 3–5x with minimum 3–5 night stays. Other peak periods include the Bathurst 12 Hour (February), Easter long weekend, NSW school holidays, and the Spring Spectacular flower show. Booking 3–6 months ahead for these events secures the best choice and the best rates — last-minute Bathurst accommodation during peak times is rare and expensive.",
+    ],
+  },
+  {
+    heading: "Top Day Trips from Bathurst",
+    body: [
+      "Within 90 minutes of central Bathurst you can reach some of the most scenic destinations in regional NSW. Highlights include the Orange wine region (40 min — 60+ cellar doors and the Mount Canobolas wine trail), Mudgee (90 min — heritage town and 35+ wineries), Jenolan Caves (90 min — Australia's most spectacular limestone caves), the Lithgow Zig Zag Railway (60 min), Sofala ghost town (45 min — gold-rush village) and Hill End Historic Site (75 min — preserved 1870s mining town).",
+      "Adventure-seekers can drive to the Capertee Valley (the world's second-largest canyon after the Grand Canyon), Wollemi National Park, Abercrombie Caves (50 min — limestone caves with the largest natural arch in the southern hemisphere) and the Burrendong Dam reservoir. Pack a picnic, fill up on fuel, and you'll have one of the most rewarding scenic drive itineraries available within easy reach of Sydney.",
+    ],
+  },
+  {
+    heading: "Bathurst Weather, Seasons & What to Pack",
+    body: [
+      "Bathurst sits at 670 m elevation, giving it a true four-season climate. Summer (Dec–Feb) is warm and dry — average maximums 28°C, minimums 13°C — perfect for outdoor dining, kayaking and wine tours. Autumn (Mar–May) brings golden foliage across the heritage streetscape with maximums of 18–24°C. Winter (Jun–Aug) is cold with average minimums of 0–3°C, occasional frost and the rare snow flurry — pack layers, a beanie and a warm jacket. Spring (Sep–Nov) delivers wildflowers, the Bathurst Spring Spectacular and warming weather.",
+      "Year-round packing tips: bring layers (the temperature can swing 15–20°C between morning and afternoon), comfortable walking shoes for the heritage trail, sun protection (the Australian UV is intense even on cool days), an empty tote for farmers market and cellar-door purchases, a refillable water bottle, and a smart-casual outfit for vineyard restaurants. Race-week visitors should also bring ear protection, a folding chair and a poncho for typical spring rain.",
+    ],
+  },
 ];
 
 const homeKeywords = [
@@ -61,6 +89,31 @@ const homeKeywords = [
   "weekend getaway Bathurst",
   "Bathurst CBD hotels",
   "Bathurst race week stays",
+  "things to do in Bathurst",
+  "Bathurst NSW tourism",
+  "visit Bathurst",
+  "Sydney to Bathurst",
+  "Bathurst Bullet train",
+  "Bathurst weather",
+  "Bathurst day trips",
+  "Orange wine region",
+  "Mudgee wineries",
+  "Jenolan Caves day trip",
+  "Bathurst restaurants",
+  "Bathurst farmers market",
+  "Two Heads Brewing",
+  "Mount Panorama Circuit",
+  "National Motor Racing Museum",
+  "Bathurst Goldfields",
+  "Australian Fossil Mineral Museum",
+  "Abercrombie House",
+  "Machattie Park",
+  "Bathurst weekend",
+  "Central Tablelands NSW",
+  "Wiradjuri country",
+  "Bathurst itinerary",
+  "Bathurst spring spectacular",
+  "Bathurst winter festival",
 ];
 
 const homeFaqs = [
