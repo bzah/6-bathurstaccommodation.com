@@ -41,16 +41,16 @@ const FAQSection = ({
   }, [structuredData]);
 
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section className="py-12 sm:py-16 md:py-24 bg-background">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium mb-3 sm:mb-4">
             FAQ
           </span>
-          <h2 className="text-2xl md:text-4xl font-heading text-foreground mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading text-foreground mb-3">
             {title}
           </h2>
-          <p className="text-muted-foreground font-body text-lg max-w-xl mx-auto">
+          <p className="text-muted-foreground font-body text-base sm:text-lg max-w-xl mx-auto">
             {subtitle}
           </p>
         </div>
@@ -60,12 +60,12 @@ const FAQSection = ({
             <AccordionItem
               key={index}
               value={`faq-${index}`}
-              className="border border-border/50 rounded-lg px-5 bg-card data-[state=open]:shadow-sm transition-shadow"
+              className="border border-border/50 rounded-lg px-4 sm:px-5 bg-card data-[state=open]:shadow-sm transition-shadow"
             >
-              <AccordionTrigger className="text-left font-heading text-base md:text-lg text-foreground hover:no-underline py-4">
+              <AccordionTrigger className="text-left font-heading text-sm sm:text-base md:text-lg text-foreground hover:no-underline py-4">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground font-body leading-relaxed pb-4">
+              <AccordionContent className="text-muted-foreground font-body text-sm sm:text-base leading-relaxed pb-4">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

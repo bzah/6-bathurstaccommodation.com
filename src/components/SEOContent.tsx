@@ -12,24 +12,24 @@ interface SEOContentProps {
 
 const SEOContent = ({ intro, sections, keywordsCloud, className = "" }: SEOContentProps) => {
   return (
-    <section className={`max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ${className}`}>
+    <section className={`max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 ${className}`}>
       {intro && (
-        <p className="text-base md:text-lg font-body text-muted-foreground leading-relaxed mb-10">
+        <p className="text-sm sm:text-base md:text-lg font-body text-muted-foreground leading-relaxed mb-8 sm:mb-10">
           {intro}
         </p>
       )}
-      <div className="space-y-10">
+      <div className="space-y-8 sm:space-y-10">
         {sections.map((s) => (
           <article key={s.heading}>
-            <h2 className="font-heading text-2xl md:text-3xl text-foreground mb-4">{s.heading}</h2>
+            <h2 className="font-heading text-xl sm:text-2xl md:text-3xl text-foreground mb-3 sm:mb-4">{s.heading}</h2>
             {Array.isArray(s.body) ? (
               s.body.map((p, i) => (
-                <p key={i} className="font-body text-muted-foreground leading-relaxed mb-3">
+                <p key={i} className="font-body text-sm sm:text-base text-muted-foreground leading-relaxed mb-3">
                   {p}
                 </p>
               ))
             ) : (
-              <p className="font-body text-muted-foreground leading-relaxed">{s.body}</p>
+              <p className="font-body text-sm sm:text-base text-muted-foreground leading-relaxed">{s.body}</p>
             )}
           </article>
         ))}
