@@ -177,13 +177,23 @@ const AttractionsPage = () => {
     touristType: ["Adventure tourists", "Cultural tourists", "Food tourists"],
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${window.location.origin}/` },
+      { "@type": "ListItem", position: 2, name: "Attractions", item: `${window.location.origin}/attractions` },
+    ],
+  };
+
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Top Attractions in Bathurst NSW | Things to See & Do"
-        description="Explore 9 top-rated attractions in Bathurst NSW — Mount Panorama Circuit, gold-rush heritage, wineries, Machattie Park, Abercrombie House & nature reserves. Free & paid activities for families."
+        title="Top 25+ Attractions in Bathurst NSW | Things to See & Do (2026 Guide)"
+        description="The complete guide to attractions in Bathurst NSW — Mount Panorama Circuit, National Motor Racing Museum, Bathurst Goldfields, Abercrombie House, Machattie Park, wineries, nature reserves & free family activities. Local tips, prices & opening hours."
+        keywords="things to do in Bathurst, Bathurst attractions, Mount Panorama Circuit, National Motor Racing Museum, Bathurst Goldfields, Abercrombie House, Machattie Park, wineries near Bathurst, Evans Crown, Hill End, Sofala, family activities Bathurst, free attractions Bathurst NSW"
         canonicalPath="/attractions"
-        structuredData={structuredData}
+        structuredData={[structuredData, attractionsFaqSchema, breadcrumbSchema]}
       />
       <Navbar />
       <main className="pt-24 pb-16">
