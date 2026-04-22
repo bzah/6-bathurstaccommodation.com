@@ -172,9 +172,9 @@ const ToursPage = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Bathurst Tours & Activities 2026 | Wine Trails, Mount Panorama, Caves & Ballooning"
-        description="Book Bathurst tours & Central West NSW activities: Mount Panorama drives, Orange & Mudgee wine trails, caves, ballooning & heritage walks. Free cancellation."
-        keywords="Bathurst tours, Bathurst activities, Mount Panorama tour, Orange wine tour, Mudgee wine tour, Central West wine trail, Bathurst hot air balloon, Jenolan Caves tour, Abercrombie Caves, heritage walking tour Bathurst, Bathurst Goldfields experience, family activities Bathurst, GetYourGuide Bathurst, Bathurst day trips, kayaking Macquarie River"
+        title="Bathurst Tours & Activities | Wine Trails, Mount Panorama & Caves 2026"
+        description="Book top-rated Bathurst tours & Central West NSW activities: Mount Panorama drives, Orange & Mudgee wine trails, Jenolan Caves & ballooning. Free cancellation."
+        keywords="bathurst tours, things to do bathurst, mount panorama tour, bathurst wine tours, orange wine tour, mudgee wine tour, central west wine trail, bathurst hot air balloon, jenolan caves tour, abercrombie caves tour, heritage walking tour bathurst, bathurst goldfields experience, family activities bathurst, getyourguide bathurst, bathurst day trips, kayaking macquarie river, 4wd tours bathurst"
         canonicalPath="/tours"
         structuredData={[structuredData, toursFaqSchema]}
         breadcrumbs={[
