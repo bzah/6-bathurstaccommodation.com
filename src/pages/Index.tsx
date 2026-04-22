@@ -161,9 +161,9 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Bathurst Accommodation NSW | Hotels, Motels, Airbnb & Stays Near Mount Panorama"
-        description="Find the best accommodation in Bathurst NSW — motels, hotels, Airbnb, caravan parks & B&Bs near Mount Panorama. Race-week tips & local guides."
-        keywords="bathurst accommodation, accommodation bathurst, accommodation bathurst nsw, places to stay in bathurst, bathurst motels, bathurst hotels, mount panorama accommodation, bathurst 1000 accommodation, caravan parks bathurst, airbnb bathurst, b&b bathurst, pet friendly bathurst, family accommodation bathurst, central west nsw stays"
+        title="Bathurst Accommodation NSW 2026 | Hotels, Motels & Stays Near Mount Panorama"
+        description="Compare 100+ Bathurst accommodation options: motels from $90, hotels, Airbnb, caravan parks & B&Bs near Mount Panorama. Best rates, reviews & race-week tips."
+        keywords="bathurst accommodation, accommodation bathurst nsw, places to stay in bathurst, bathurst motels, bathurst hotels, mount panorama accommodation, bathurst 1000 accommodation, cheap accommodation bathurst, luxury hotels bathurst, airbnb bathurst nsw, b&b bathurst, pet friendly accommodation bathurst, family accommodation bathurst, weekend getaway bathurst, central west nsw stays"
         canonicalPath="/"
         structuredData={[structuredData, localBusinessSchema, faqStructuredData]}
         breadcrumbs={[{ name: "Home", path: "/" }]}

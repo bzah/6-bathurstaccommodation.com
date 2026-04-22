@@ -68,10 +68,14 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Contact Bathurst Accommodation | Travel Help, Listings & Press Enquiries"
-        description="Contact the Bathurst Accommodation team for travel help, property listings, partnerships, press enquiries & feedback on Bathurst NSW stays & tours."
-        keywords="contact Bathurst Accommodation, Bathurst travel help, Bathurst NSW contact, list my Bathurst property, Bathurst tourism contact, Mount Panorama accommodation contact"
+        title="Contact Us | Bathurst Accommodation NSW — Listings, Help & Partnerships"
+        description="Contact Bathurst Accommodation for travel advice, property listings, partnerships & press enquiries. Quick replies on Bathurst NSW stays, tours & attractions."
+        keywords="contact bathurst accommodation, bathurst travel help, bathurst nsw contact, list my bathurst property, bathurst tourism contact, mount panorama accommodation contact, bathurst booking enquiry, advertise bathurst accommodation"
         canonicalPath="/contact"
+        breadcrumbs={[
+          { name: "Home", path: "/" },
+          { name: "Contact", path: "/contact" },
+        ]}
       />
       <Navbar />
       <main className="pt-24 pb-16">

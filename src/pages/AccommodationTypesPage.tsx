@@ -171,9 +171,9 @@ const AccommodationTypesPage = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Bathurst Accommodation Types 2026 | Motels, Hotels, Caravan Parks, Airbnb & B&Bs"
-        description="Compare Bathurst accommodation: motels from $90, hotels, caravan parks, Airbnb & B&Bs near Mount Panorama. Pet-friendly & race-week tips inside."
-        keywords="Bathurst accommodation types, motels Bathurst NSW, hotels Bathurst, caravan parks Bathurst, Airbnb Bathurst, B&B Bathurst, pet friendly motels Bathurst, Mount Panorama hotels, Rydges Mount Panorama, Bathurst 1000 accommodation, cheap motels Bathurst, family accommodation Bathurst, farm stay near Bathurst, self contained Bathurst"
+        title="Bathurst Accommodation Types | Motels, Hotels, Airbnb & Caravan Parks NSW"
+        description="Find the right Bathurst stay: motels from $90, hotels, caravan parks, Airbnb rentals & heritage B&Bs near Mount Panorama. Pet-friendly & race-week guide."
+        keywords="bathurst accommodation types, motels bathurst nsw, hotels bathurst, caravan parks bathurst, airbnb bathurst, b&b bathurst, pet friendly motels bathurst, mount panorama hotels, rydges mount panorama, bathurst 1000 accommodation, cheap motels bathurst, family accommodation bathurst, farm stay bathurst, self contained accommodation bathurst, holiday rentals bathurst nsw"
         canonicalPath="/accommodation-types"
         structuredData={[structuredData, accommodationFaqSchema]}
         breadcrumbs={[
