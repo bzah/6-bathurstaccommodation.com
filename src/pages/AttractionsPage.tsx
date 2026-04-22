@@ -279,6 +279,12 @@ const AttractionsPage = () => {
           </div>
         </div>
 
+        <SEOContent
+          intro="Looking for the best things to do in Bathurst NSW? This in-depth guide covers the city's most popular attractions, hidden local gems and family-friendly experiences across motorsport, heritage, food, wine and the outdoors."
+          sections={attractionsSeoSections}
+          keywordsCloud={attractionsKeywords}
+        />
+
         <FAQSection
           faqs={attractionsFaqs}
           structuredData={attractionsFaqSchema}
