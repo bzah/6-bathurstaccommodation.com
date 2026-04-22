@@ -5,28 +5,52 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { blogPosts } from "@/data/blogPosts";
 
+const SITE_URL = "https://bathurstaccommodation.com";
+
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) return <Navigate to="/blog" replace />;
 
+  const postUrl = `${SITE_URL}/blog/${post.slug}`;
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": `${postUrl}#article`,
     headline: post.title,
     description: post.metaDescription,
-    image: post.image,
+    image: {
+      "@type": "ImageObject",
+      url: post.image,
+      width: 1200,
+      height: 675,
+    },
     datePublished: post.date,
-    author: { "@type": "Organization", name: post.author },
+    dateModified: post.date,
+    author: {
+      "@type": "Organization",
+      name: post.author,
+      url: SITE_URL,
+    },
     publisher: {
       "@type": "Organization",
       name: "Bathurst Accommodation",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/favicon.png`,
+        width: 512,
+        height: 512,
+      },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${window.location.origin}/blog/${post.slug}`,
+      "@id": postUrl,
     },
+    keywords: post.tags.join(", "),
+    articleSection: post.tags[0] || "Travel",
+    inLanguage: "en-AU",
   };
 
   // Simple markdown-ish rendering for the content
@@ -66,7 +90,13 @@ const BlogPost = () => {
         description={post.metaDescription}
         canonicalPath={`/blog/${post.slug}`}
         ogImage={post.image}
+        ogType="article"
         structuredData={structuredData}
+        breadcrumbs={[
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: post.title, path: `/blog/${post.slug}` },
+        ]}
       />
       <Navbar />
       <main className="pt-24 pb-16">

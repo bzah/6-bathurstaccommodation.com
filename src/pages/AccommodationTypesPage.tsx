@@ -168,15 +168,6 @@ const AccommodationTypesPage = () => {
     },
   };
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${window.location.origin}/` },
-      { "@type": "ListItem", position: 2, name: "Accommodation", item: `${window.location.origin}/accommodation-types` },
-    ],
-  };
-
   return (
     <div className="min-h-screen">
       <SEOHead
@@ -184,7 +175,11 @@ const AccommodationTypesPage = () => {
         description="Compare Bathurst accommodation: motels from $90, hotels, caravan parks, Airbnb & B&Bs near Mount Panorama. Pet-friendly & race-week tips inside."
         keywords="Bathurst accommodation types, motels Bathurst NSW, hotels Bathurst, caravan parks Bathurst, Airbnb Bathurst, B&B Bathurst, pet friendly motels Bathurst, Mount Panorama hotels, Rydges Mount Panorama, Bathurst 1000 accommodation, cheap motels Bathurst, family accommodation Bathurst, farm stay near Bathurst, self contained Bathurst"
         canonicalPath="/accommodation-types"
-        structuredData={[structuredData, accommodationFaqSchema, breadcrumbSchema]}
+        structuredData={[structuredData, accommodationFaqSchema]}
+        breadcrumbs={[
+          { name: "Home", path: "/" },
+          { name: "Accommodation", path: "/accommodation-types" },
+        ]}
       />
       <Navbar />
       <main className="pt-24 pb-16">

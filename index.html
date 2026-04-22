@@ -14,35 +14,104 @@
     <meta property="og:description" content="Find the best accommodation in Bathurst, NSW. Explore hotels, motels, and holiday stays near Mount Panorama, historic goldfields, and wineries." />
     <meta property="og:url" content="https://bathurstaccommodation.com/" />
     <meta property="og:site_name" content="Bathurst Accommodation" />
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:image" content="https://bathurstaccommodation.com/favicon.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Bathurst Accommodation | Best Places to Stay in Bathurst NSW" />
     <meta name="twitter:description" content="Find the best accommodation in Bathurst, NSW. Explore hotels, motels, and holiday stays near Mount Panorama." />
+    <meta name="twitter:image" content="https://bathurstaccommodation.com/favicon.png" />
 
     <meta name="geo.region" content="AU-NSW" />
     <meta name="geo.placename" content="Bathurst" />
+    <meta name="geo.position" content="-33.4193;149.5788" />
+    <meta name="ICBM" content="-33.4193, 149.5788" />
+    <meta name="author" content="Bathurst Accommodation" />
+    <meta name="theme-color" content="#d4943a" />
 
     <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
 
+    <!-- 1. Organization Schema (E-E-A-T trust signal) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://bathurstaccommodation.com/#organization",
+      "name": "Bathurst Accommodation",
+      "alternateName": "BathurstAccommodation.com",
+      "url": "https://bathurstaccommodation.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bathurstaccommodation.com/favicon.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Independent local guide to the best accommodation, attractions and tours in Bathurst NSW, Australia.",
+      "areaServed": {
+        "@type": "City",
+        "name": "Bathurst",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "New South Wales"
+        }
+      }
+    }
+    </script>
+
+    <!-- 2. WebSite Schema with Sitelinks Search Box -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://bathurstaccommodation.com/#website",
+      "url": "https://bathurstaccommodation.com/",
+      "name": "Bathurst Accommodation",
+      "description": "Best places to stay in Bathurst NSW — motels, hotels, Airbnb & B&Bs near Mount Panorama.",
+      "publisher": { "@id": "https://bathurstaccommodation.com/#organization" },
+      "inLanguage": "en-AU",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://bathurstaccommodation.com/blog?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- 3. TouristDestination Schema (Local SEO) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "TouristDestination",
+      "@id": "https://bathurstaccommodation.com/#destination",
       "name": "Bathurst, NSW",
       "description": "Australia's oldest inland city, home to the famous Mount Panorama racing circuit, gold rush heritage, and award-winning wineries.",
       "url": "https://bathurstaccommodation.com/",
+      "image": "https://bathurstaccommodation.com/favicon.png",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Bathurst",
         "addressRegion": "NSW",
+        "postalCode": "2795",
         "addressCountry": "AU"
       },
-      "touristType": ["Adventure", "Cultural", "Wine", "Motorsport"],
+      "touristType": ["Adventure", "Cultural", "Wine", "Motorsport", "Family", "Heritage"],
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": -33.4193,
         "longitude": 149.5788
-      }
+      },
+      "includesAttraction": [
+        { "@type": "TouristAttraction", "name": "Mount Panorama Circuit" },
+        { "@type": "TouristAttraction", "name": "National Motor Racing Museum" },
+        { "@type": "TouristAttraction", "name": "Bathurst Goldfields" },
+        { "@type": "TouristAttraction", "name": "Abercrombie House" },
+        { "@type": "TouristAttraction", "name": "Machattie Park" },
+        { "@type": "TouristAttraction", "name": "Australian Fossil & Mineral Museum" }
+      ]
     }
     </script>
   </head>

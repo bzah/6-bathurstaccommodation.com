@@ -90,20 +90,53 @@ const homeFaqs = [
   },
 ];
 
+const SITE_URL = "https://bathurstaccommodation.com";
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "TouristDestination",
+  "@id": `${SITE_URL}/#destination`,
   name: "Bathurst, NSW",
   description:
     "Australia's oldest inland city, home to the famous Mount Panorama racing circuit, gold rush heritage, and award-winning wineries. Find the best accommodation in Bathurst NSW.",
-  url: "https://bathurstaccommodation.com/",
+  url: `${SITE_URL}/`,
+  image: `${SITE_URL}/favicon.png`,
   address: {
     "@type": "PostalAddress",
     addressLocality: "Bathurst",
     addressRegion: "NSW",
+    postalCode: "2795",
     addressCountry: "AU",
   },
-  touristType: ["Adventure", "Cultural", "Wine", "Motorsport"],
+  touristType: ["Adventure", "Cultural", "Wine", "Motorsport", "Family", "Heritage"],
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -33.4193,
+    longitude: 149.5788,
+  },
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "@id": `${SITE_URL}/#business`,
+  name: "Bathurst Accommodation",
+  url: `${SITE_URL}/`,
+  image: `${SITE_URL}/favicon.png`,
+  description: "Independent online guide for accommodation, attractions and tours in Bathurst NSW.",
+  priceRange: "$$",
+  areaServed: {
+    "@type": "City",
+    name: "Bathurst",
+    containedInPlace: { "@type": "AdministrativeArea", name: "New South Wales" },
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Bathurst",
+    addressRegion: "NSW",
+    postalCode: "2795",
+    addressCountry: "AU",
+  },
   geo: {
     "@type": "GeoCoordinates",
     latitude: -33.4193,
@@ -132,7 +165,8 @@ const Index = () => {
         description="Find the best accommodation in Bathurst NSW — motels, hotels, Airbnb, caravan parks & B&Bs near Mount Panorama. Race-week tips & local guides."
         keywords="bathurst accommodation, accommodation bathurst, accommodation bathurst nsw, places to stay in bathurst, bathurst motels, bathurst hotels, mount panorama accommodation, bathurst 1000 accommodation, caravan parks bathurst, airbnb bathurst, b&b bathurst, pet friendly bathurst, family accommodation bathurst, central west nsw stays"
         canonicalPath="/"
-        structuredData={[structuredData, faqStructuredData]}
+        structuredData={[structuredData, localBusinessSchema, faqStructuredData]}
+        breadcrumbs={[{ name: "Home", path: "/" }]}
       />
       <Navbar />
       <Hero />

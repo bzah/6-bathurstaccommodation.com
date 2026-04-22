@@ -6,19 +6,36 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { blogPosts } from "@/data/blogPosts";
 
+const SITE_URL = "https://bathurstaccommodation.com";
+
 const BlogIndex = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Blog",
+    "@id": `${SITE_URL}/blog#blog`,
     name: "Bathurst Travel Blog",
     description: "Insider tips, accommodation guides, and travel advice for visiting Bathurst NSW.",
-    url: `${window.location.origin}/blog`,
+    url: `${SITE_URL}/blog`,
+    publisher: { "@id": `${SITE_URL}/#organization` },
     blogPost: blogPosts.map((post) => ({
       "@type": "BlogPosting",
       headline: post.title,
+      description: post.metaDescription,
+      image: post.image,
       datePublished: post.date,
       author: { "@type": "Organization", name: post.author },
-      url: `${window.location.origin}/blog/${post.slug}`,
+      url: `${SITE_URL}/blog/${post.slug}`,
+    })),
+  };
+
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: blogPosts.map((post, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${SITE_URL}/blog/${post.slug}`,
+      name: post.title,
     })),
   };
 
@@ -28,7 +45,11 @@ const BlogIndex = () => {
         title="Bathurst Travel Blog | Accommodation Tips & Guides"
         description="Insider tips, accommodation guides, and everything you need to plan your perfect Bathurst getaway. Find the best motels, hotels, and things to do."
         canonicalPath="/blog"
-        structuredData={structuredData}
+        structuredData={[structuredData, itemListSchema]}
+        breadcrumbs={[
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+        ]}
       />
       <Navbar />
       <main className="pt-24 pb-16">

@@ -169,15 +169,6 @@ const ToursPage = () => {
     touristType: ["Adventure tourists", "Cultural tourists", "Food tourists"],
   };
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${window.location.origin}/` },
-      { "@type": "ListItem", position: 2, name: "Tours", item: `${window.location.origin}/tours` },
-    ],
-  };
-
   return (
     <div className="min-h-screen">
       <SEOHead
@@ -185,7 +176,11 @@ const ToursPage = () => {
         description="Book Bathurst tours & Central West NSW activities: Mount Panorama drives, Orange & Mudgee wine trails, caves, ballooning & heritage walks. Free cancellation."
         keywords="Bathurst tours, Bathurst activities, Mount Panorama tour, Orange wine tour, Mudgee wine tour, Central West wine trail, Bathurst hot air balloon, Jenolan Caves tour, Abercrombie Caves, heritage walking tour Bathurst, Bathurst Goldfields experience, family activities Bathurst, GetYourGuide Bathurst, Bathurst day trips, kayaking Macquarie River"
         canonicalPath="/tours"
-        structuredData={[structuredData, toursFaqSchema, breadcrumbSchema]}
+        structuredData={[structuredData, toursFaqSchema]}
+        breadcrumbs={[
+          { name: "Home", path: "/" },
+          { name: "Tours", path: "/tours" },
+        ]}
       />
       <Navbar />
       <main className="pt-24 pb-16">
