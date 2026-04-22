@@ -7,6 +7,11 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "Accommodation", href: "/accommodation-types" },
   { label: "Attractions", href: "/attractions" },
+  { label: "Mount Panorama", href: "/mount-panorama" },
+  { label: "Bathurst 1000", href: "/bathurst-1000" },
+  { label: "Wineries", href: "/wineries" },
+  { label: "Restaurants", href: "/restaurants" },
+  { label: "Family", href: "/family" },
   { label: "Tours", href: "/tours" },
   { label: "Blog", href: "/blog" },
 ];

@@ -9,6 +9,11 @@ import BlogPost from "./pages/BlogPost.tsx";
 import AttractionsPage from "./pages/AttractionsPage.tsx";
 import AccommodationTypesPage from "./pages/AccommodationTypesPage.tsx";
 import ToursPage from "./pages/ToursPage.tsx";
+import MountPanoramaPage from "./pages/MountPanoramaPage.tsx";
+import Bathurst1000Page from "./pages/Bathurst1000Page.tsx";
+import WineriesPage from "./pages/WineriesPage.tsx";
+import FamilyPage from "./pages/FamilyPage.tsx";
+import RestaurantsPage from "./pages/RestaurantsPage.tsx";
 import AboutPage from "./pages/AboutPage.tsx";
 import ContactPage from "./pages/ContactPage.tsx";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.tsx";
@@ -34,6 +39,11 @@ const App = () => (
           <Route path="/attractions" element={<AttractionsPage />} />
           <Route path="/accommodation-types" element={<AccommodationTypesPage />} />
           <Route path="/tours" element={<ToursPage />} />
+          <Route path="/mount-panorama" element={<MountPanoramaPage />} />
+          <Route path="/bathurst-1000" element={<Bathurst1000Page />} />
+          <Route path="/wineries" element={<WineriesPage />} />
+          <Route path="/family" element={<FamilyPage />} />
+          <Route path="/restaurants" element={<RestaurantsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />

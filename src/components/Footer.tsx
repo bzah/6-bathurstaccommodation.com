@@ -25,6 +25,11 @@ const Footer = () => {
               {[
                 { label: "Accommodation", to: "/accommodation-types" },
                 { label: "Attractions", to: "/attractions" },
+                { label: "Mount Panorama", to: "/mount-panorama" },
+                { label: "Bathurst 1000", to: "/bathurst-1000" },
+                { label: "Wineries", to: "/wineries" },
+                { label: "Restaurants", to: "/restaurants" },
+                { label: "Family Holidays", to: "/family" },
                 { label: "Tours & Activities", to: "/tours" },
                 { label: "Travel Blog", to: "/blog" },
               ].map((link) => (
