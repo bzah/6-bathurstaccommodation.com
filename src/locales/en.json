@@ -1,0 +1,377 @@
+{
+  "common": {
+    "siteName": "BathurstAccommodation",
+    "siteTagline": "Australia's oldest inland city",
+    "loading": "Loading...",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "explore": "Explore",
+    "visit": "Visit",
+    "book": "Book",
+    "bookNow": "Book Now",
+    "bookTours": "Book Tours",
+    "findTours": "Find Tours",
+    "topAttractions": "Top Attractions",
+    "language": "Language",
+    "selectLanguage": "Select language",
+    "backToHome": "Back to Home"
+  },
+  "nav": {
+    "home": "Home",
+    "accommodation": "Accommodation",
+    "attractions": "Attractions",
+    "tours": "Tours",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "tagline": "Your guide to the best accommodation in Bathurst, NSW. Discover places to stay, top attractions, tours, and activities in Australia's oldest inland city.",
+    "explore": "Explore",
+    "company": "Company",
+    "legal": "Legal",
+    "links": {
+      "accommodation": "Accommodation",
+      "attractions": "Attractions",
+      "tours": "Tours & Activities",
+      "blog": "Travel Blog",
+      "about": "About Us",
+      "contact": "Contact",
+      "parents": "Parents Info",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy",
+      "dmca": "DMCA",
+      "legalNotice": "Legal Notice"
+    },
+    "copyright": "© {{year}} BathurstAccommodation.com — All rights reserved. This site contains affiliate links. We may earn a commission when you book through our links."
+  },
+  "hero": {
+    "location": "🇦🇺 New South Wales, Australia",
+    "title": "Bathurst",
+    "subtitle": "Australia's Oldest Inland City",
+    "description": "Discover the best accommodation in Bathurst — from charming heritage stays to modern motels. Explore Mount Panorama, gold rush history, world-class wineries, and stunning countryside."
+  },
+  "whyVisit": {
+    "kicker": "Discover Bathurst",
+    "title": "Why Stay in Bathurst?",
+    "description": "Whether you're seeking accommodation in Bathurst for the Bathurst 1000, a wine getaway, or a heritage exploration — this historic city has it all.",
+    "reasons": {
+      "mountPanorama": {
+        "title": "Mount Panorama",
+        "description": "Home to the legendary Bathurst 1000 motor race. Drive the iconic circuit or soak in panoramic views of the city below."
+      },
+      "goldRush": {
+        "title": "Gold Rush Heritage",
+        "description": "Step back to the 1850s gold rush era. Visit historic goldfields, heritage-listed buildings, and museums that tell Bathurst's rich story."
+      },
+      "wineries": {
+        "title": "Award-Winning Wineries",
+        "description": "The cool-climate Orange and Mudgee wine regions are at your doorstep. Enjoy cellar door tastings and gourmet dining experiences."
+      },
+      "central": {
+        "title": "Central Location",
+        "description": "Just 3 hours from Sydney by car or train. The perfect base to explore the stunning Central West NSW region and Blue Mountains."
+      }
+    }
+  },
+  "attractionsHome": {
+    "kicker": "Places to Visit",
+    "title": "Top Bathurst Attractions",
+    "description": "From the iconic Mount Panorama to gold rush history and world-class wineries — Bathurst offers unforgettable experiences for every traveller.",
+    "items": {
+      "mountPanorama": {
+        "title": "Mount Panorama Circuit",
+        "description": "The world-famous motor racing circuit and home of the Bathurst 1000. Drive the 6.2km public road or visit the National Motor Racing Museum.",
+        "cta": "Explore Tours"
+      },
+      "courthouse": {
+        "title": "Historic Bathurst Courthouse",
+        "description": "One of Australia's finest heritage courthouses. Explore the stunning sandstone architecture and learn about Bathurst's colonial past.",
+        "cta": "Learn More"
+      },
+      "gardens": {
+        "title": "Machattie Park & Gardens",
+        "description": "Beautiful Victorian-era gardens in the heart of Bathurst featuring ornamental lakes, heritage bandstand, and stunning native plantings.",
+        "cta": "Visit"
+      },
+      "goldfields": {
+        "title": "Bathurst Goldfields",
+        "description": "Relive the excitement of the 1850s gold rush. Pan for gold, explore heritage buildings, and discover the stories of the fortune seekers.",
+        "cta": "Book Experience"
+      },
+      "wineries": {
+        "title": "Central West Wineries",
+        "description": "Sample award-winning cool-climate wines from the nearby Orange and Mudgee wine regions. Perfect for a day trip from your Bathurst accommodation.",
+        "cta": "Wine Tours"
+      }
+    }
+  },
+  "activities": {
+    "kicker": "Things to Do",
+    "title": "Popular Activities Near Bathurst",
+    "description": "Whether you're looking for adventure, culture, or relaxation — there's no shortage of things to do during your stay in Bathurst, NSW.",
+    "items": {
+      "race": {
+        "title": "Bathurst 1000 Race Weekend",
+        "description": "Experience the thrill of Australia's greatest motor race. Book accommodation in Bathurst early — the entire region fills up fast during the October long weekend."
+      },
+      "gold": {
+        "title": "Gold Panning Experience",
+        "description": "Try your luck panning for gold at the Bathurst Goldfields heritage site. A fun hands-on activity for the whole family."
+      },
+      "wine": {
+        "title": "Wine & Food Trail",
+        "description": "Explore the Central West wine trail with cellar door tastings at boutique wineries, local produce markets, and gourmet restaurants."
+      },
+      "heritage": {
+        "title": "Heritage Walking Tours",
+        "description": "Discover Bathurst's 200+ years of history with self-guided or guided walking tours through the city's beautifully preserved heritage precinct."
+      },
+      "caves": {
+        "title": "Abercrombie Caves",
+        "description": "Explore the stunning Abercrombie Caves, featuring the largest natural limestone arch in the southern hemisphere. Just 70km south of Bathurst."
+      },
+      "balloon": {
+        "title": "Scenic Hot Air Ballooning",
+        "description": "Float gently over the breathtaking Central West countryside at sunrise. An unforgettable way to see the region from above."
+      }
+    }
+  },
+  "booking": {
+    "kicker": "🎫 Book Online",
+    "title": "Book Bathurst Adventures",
+    "description": "Browse and book the best tours, activities, and experiences in and around Bathurst.",
+    "loading": "Loading tours...",
+    "viewAll": "View All Bathurst Tours →"
+  },
+  "blogHome": {
+    "badge": "Travel Tips & Guides",
+    "title": "Bathurst Travel Blog",
+    "description": "Insider tips, accommodation guides, and everything you need to plan your perfect Bathurst getaway.",
+    "viewAll": "View All Articles"
+  },
+  "cta": {
+    "title": "Plan Your Bathurst Getaway",
+    "description": "Ready to explore Australia's oldest inland city? Find the perfect accommodation in Bathurst and start planning your adventure today.",
+    "primary": "Book Activities",
+    "secondary": "Explore Attractions"
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about visiting and staying in Bathurst NSW."
+  },
+  "accommodationPage": {
+    "badge": "Where to Stay",
+    "title": "Bathurst Accommodation Types",
+    "description": "From budget motels to luxury hotels, camping under the stars to cosy B&Bs — find the perfect place to stay for your Bathurst adventure.",
+    "tipsTitle": "Booking Tips for Bathurst",
+    "tips": {
+      "race": {
+        "title": "🏁 Race Week",
+        "text": "Book 6–12 months ahead for the Bathurst 1000 in October. Minimum stays and premium pricing apply across all accommodation types."
+      },
+      "offPeak": {
+        "title": "🍂 Off-Peak",
+        "text": "Visit March–May or September–November for the best weather and availability. Prices drop significantly outside event weekends."
+      },
+      "location": {
+        "title": "📍 Location",
+        "text": "Stay within 10 minutes of town for easy access to attractions, dining, and Mount Panorama. Shuttle services run during major events."
+      }
+    },
+    "exploreTitle": "Explore More of Bathurst",
+    "exploreDesc": "Discover what to see, do, and experience during your stay.",
+    "seeAttractions": "See Attractions",
+    "bookTours": "Book Tours",
+    "travelBlog": "Travel Blog",
+    "perNight": "per night",
+    "bestFor": "Best for:",
+    "faqTitle": "Accommodation FAQs",
+    "faqSubtitle": "Common questions about finding places to stay in Bathurst.",
+    "types": {
+      "motels": {
+        "title": "Motels",
+        "subtitle": "Budget to mid-range comfort",
+        "description": "Bathurst has around 20 motels spread across the city, many within a short drive of Mount Panorama. Motels are the most popular choice for race-goers and weekend visitors, offering clean, comfortable rooms with parking right at your door.",
+        "features": ["Free parking", "Wi-Fi included", "Pet-friendly options", "Close to Mount Panorama"],
+        "priceRange": "$90 – $200 per night",
+        "bestFor": "Race weekends, couples, budget travellers"
+      },
+      "hotels": {
+        "title": "Hotels",
+        "subtitle": "Full-service stays",
+        "description": "For those wanting more amenities, Bathurst's hotels offer restaurants, bars, room service, and conference facilities. Rydges Mount Panorama is the premium option, located right at the circuit with mountain views.",
+        "features": ["On-site dining", "Pool & gym", "Room service", "Conference facilities"],
+        "priceRange": "$150 – $350 per night",
+        "bestFor": "Business travellers, couples, families wanting comfort"
+      },
+      "caravan": {
+        "title": "Caravan Parks & Camping",
+        "subtitle": "Outdoor adventure",
+        "description": "Bathurst's caravan parks are a social hub, especially during race week. Choose from powered sites, unpowered sites, and cabins. Some parks are walking distance from Mount Panorama, and the camping atmosphere is part of the Bathurst experience.",
+        "features": ["Powered & unpowered sites", "Cabins available", "Camp kitchens", "Family facilities"],
+        "priceRange": "$30 – $150 per night",
+        "bestFor": "Families, groups, race-week camping culture"
+      },
+      "airbnb": {
+        "title": "Airbnb & Private Rentals",
+        "subtitle": "Home away from home",
+        "description": "The rise of Airbnb has added significant capacity, especially during peak events. Find everything from studio apartments to full houses with backyards. Great for groups who want to spread out and self-cater.",
+        "features": ["Full kitchens", "Multiple bedrooms", "Unique properties", "Local neighbourhood feel"],
+        "priceRange": "$100 – $500 per night",
+        "bestFor": "Groups, families, extended stays"
+      },
+      "bnb": {
+        "title": "Bed & Breakfasts",
+        "subtitle": "Charming hospitality",
+        "description": "Bathurst and the surrounding countryside have some lovely B&Bs offering personal hospitality, home-cooked breakfasts, and heritage character. Ideal for couples looking for a romantic getaway or a quieter alternative to motels.",
+        "features": ["Home-cooked breakfast", "Heritage properties", "Personal service", "Garden settings"],
+        "priceRange": "$120 – $280 per night",
+        "bestFor": "Couples, romantic getaways, heritage lovers"
+      }
+    }
+  },
+  "attractionsPage": {
+    "badge": "Places to Visit",
+    "title": "Top Attractions in Bathurst NSW",
+    "description": "Australia's oldest inland city is packed with history, nature, culture, and adventure. From the iconic Mount Panorama to world-class wineries, here's everything worth seeing.",
+    "planTitle": "Plan Your Bathurst Trip",
+    "planDesc": "Find the perfect place to stay and book guided experiences for your visit.",
+    "browseAccommodation": "Browse Accommodation",
+    "exploreTours": "Explore Tours",
+    "readTips": "Read Travel Tips",
+    "faqTitle": "Attractions FAQs",
+    "faqSubtitle": "Common questions about things to see and do in Bathurst."
+  },
+  "toursPage": {
+    "badge": "Tours & Experiences",
+    "title": "Bathurst Tours & Activities",
+    "description": "From racing heritage to wine trails and sunrise balloon flights — discover the best ways to experience Bathurst and the Central West.",
+    "bookingTitle": "Book Your Bathurst Experience",
+    "bookingDesc": "Browse availability and book directly. Instant confirmation on most experiences.",
+    "viewAllTours": "View All Bathurst Tours →",
+    "planTitle": "Plan Your Full Trip",
+    "planDesc": "Find accommodation and discover more of what Bathurst has to offer.",
+    "findAccommodation": "Find Accommodation",
+    "seeAttractions": "See Attractions",
+    "travelBlog": "Travel Blog",
+    "loading": "Loading tours...",
+    "faqTitle": "Tours & Activities FAQs",
+    "faqSubtitle": "Common questions about tours and experiences in Bathurst.",
+    "fullDay": "Full day",
+    "halfDay": "Half day",
+    "hours": "hours"
+  },
+  "aboutPage": {
+    "badge": "About Us",
+    "title": "About Bathurst Accommodation",
+    "description": "We're passionate about helping visitors discover the best of Bathurst, NSW — from finding the perfect place to stay to exploring everything this incredible region has to offer.",
+    "missionTitle": "Our Mission",
+    "missionText": "BathurstAccommodation.com was created to be the most comprehensive and helpful resource for anyone planning a trip to Bathurst. Whether you're coming for the Bathurst 1000, a weekend getaway, a family holiday, or a business trip, we aim to make finding the right accommodation simple and stress-free.",
+    "localTitle": "Local Knowledge",
+    "localText": "We know Bathurst inside and out. Our guides are written with genuine local knowledge, covering everything from the best motels near Mount Panorama to hidden gem wineries, family-friendly attractions, and seasonal events. We update our content regularly to ensure you always have the most current information.",
+    "whoTitle": "Who We Help",
+    "who": {
+      "fans": "<bold>Motorsport fans</bold> looking for race-week accommodation near Mount Panorama",
+      "families": "<bold>Families</bold> planning holidays with kid-friendly activities and stays",
+      "couples": "<bold>Couples</bold> seeking romantic getaways with wineries and fine dining",
+      "solo": "<bold>Solo travellers</bold> exploring Australia's oldest inland city",
+      "business": "<bold>Business travellers</bold> needing convenient, comfortable accommodation"
+    },
+    "affiliateTitle": "Affiliate Disclosure",
+    "affiliateText": "BathurstAccommodation.com contains affiliate links. When you book accommodation or tours through our links, we may earn a small commission at no extra cost to you. This helps us maintain and improve this free resource. We only recommend services and properties we believe offer genuine value to our visitors.",
+    "ctaTitle": "Start Planning Your Trip",
+    "ctaDesc": "Explore accommodation options, attractions, and tours to make the most of your Bathurst visit.",
+    "browseAcc": "Browse Accommodation",
+    "seeAttractions": "See Attractions"
+  },
+  "contactPage": {
+    "badge": "Get in Touch",
+    "title": "Contact Us",
+    "description": "Have a question about accommodation in Bathurst? Want to suggest a listing or report an issue? We'd love to hear from you.",
+    "emailLabel": "Email",
+    "locationLabel": "Location",
+    "locationValue": "Bathurst, NSW 2795, Australia",
+    "websiteLabel": "Website",
+    "formTitle": "Send us a message",
+    "formSubtitle": "We typically reply within 1-2 business days.",
+    "fields": {
+      "name": "Your name",
+      "namePlaceholder": "Jane Smith",
+      "email": "Your email",
+      "emailPlaceholder": "jane@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Question about accommodation in Bathurst",
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help..."
+    },
+    "send": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message sent! We'll get back to you soon.",
+    "successDesc": "A confirmation email has been sent to your inbox.",
+    "errorTitle": "Failed to send message",
+    "validation": {
+      "nameRequired": "Name is required",
+      "nameTooLong": "Name too long",
+      "emailInvalid": "Invalid email address",
+      "subjectRequired": "Subject is required",
+      "subjectTooLong": "Subject too long",
+      "messageMin": "Message must be at least 10 characters",
+      "messageTooLong": "Message too long"
+    }
+  },
+  "parentsPage": {
+    "badge": "Safety First",
+    "title": "Parents Information",
+    "description": "We take the safety and privacy of children seriously. Here's what parents and guardians need to know about our website.",
+    "commitmentTitle": "Our Commitment to Child Safety",
+    "commitmentText": "BathurstAccommodation.com is a travel information website designed for adults planning trips to Bathurst, NSW. We do not knowingly collect, use, or disclose personal information from children under the age of 13. Our website does not contain content that is harmful or inappropriate for children.",
+    "privacyTitle": "Children's Privacy",
+    "privacyText": "We do not require any user registration, and we do not collect personal data from visitors of any age beyond standard analytics (page views, browser type). We do not have chat features, forums, or user-generated content areas where children could share personal information.",
+    "supervisionTitle": "Parental Supervision",
+    "supervisionIntro": "While our website is safe for all ages, we recommend that parents:",
+    "supervision": [
+      "Supervise children's internet usage as a general practice",
+      "Be aware that our site contains external links to booking platforms and third-party websites",
+      "Review our Privacy Policy and Cookie Policy for information about data collection",
+      "Contact us if they have any concerns about content on our site"
+    ],
+    "linksTitle": "External Links & Bookings",
+    "linksText": "Our website contains links to third-party booking platforms and tour operators. These external sites have their own privacy policies and data collection practices. We encourage parents to review the terms and privacy policies of any external site before allowing children to interact with it. All bookings should be made by an adult or under adult supervision.",
+    "questionsTitle": "Questions or Concerns?",
+    "questionsText": "If you have any questions about our practices regarding children's privacy and safety, or if you believe we have inadvertently collected information from a child, please contact us immediately.",
+    "contactUs": "Contact Us",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "blogPage": {
+    "badge": "Travel Tips & Guides",
+    "title": "Bathurst Travel Blog",
+    "description": "Insider tips, accommodation guides, and everything you need to plan your perfect Bathurst getaway."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page <code>{{path}}</code> doesn't exist or has been moved.",
+    "help": "Let's help you find what you're looking for.",
+    "goHome": "Go to Homepage",
+    "findAccommodation": "Find Accommodation",
+    "popularTitle": "Popular Pages",
+    "popular": {
+      "accommodation": { "label": "Accommodation Types", "desc": "Motels, hotels, camping & more" },
+      "attractions": { "label": "Top Attractions", "desc": "Things to see & do in Bathurst" },
+      "tours": { "label": "Tours & Activities", "desc": "Book experiences online" },
+      "blog": { "label": "Travel Blog", "desc": "Tips, guides & itineraries" },
+      "about": { "label": "About Us", "desc": "Our mission & story" },
+      "contact": { "label": "Contact", "desc": "Get in touch" }
+    }
+  },
+  "legal": {
+    "lastUpdated": "Last updated:",
+    "noteTitle": "Note on translations",
+    "noteText": "The full legal text below is provided in English to preserve legal accuracy. If you need clarification, please contact us."
+  }
+}
