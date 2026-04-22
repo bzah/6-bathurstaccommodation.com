@@ -91,21 +91,47 @@
     @apply border-border;
   }
 
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
   body {
     @apply bg-background text-foreground font-body;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Prevent any element from breaking the viewport on mobile */
+  img, video, iframe, svg {
+    max-width: 100%;
+    height: auto;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  p, a, span, li {
+    overflow-wrap: break-word;
+  }
+
+  /* Comfortable tap targets on mobile */
+  @media (max-width: 640px) {
+    button, a[role="button"], a.btn, input, select, textarea {
+      min-height: 44px;
+    }
   }
 }
 
 @layer components {
   .section-padding {
-    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+    @apply px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-24;
   }
 
   .container-narrow {
-    @apply max-w-6xl mx-auto;
+    @apply max-w-6xl mx-auto w-full;
   }
 }

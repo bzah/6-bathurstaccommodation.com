@@ -51,20 +51,20 @@ const Attractions = () => {
   return (
     <section id="attractions" className="section-padding bg-muted/50">
       <div className="container-narrow">
-        <div className="text-center mb-16">
-          <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-3">
+        <div className="text-center mb-10 sm:mb-16">
+          <p className="font-body text-xs sm:text-sm uppercase tracking-[0.2em] text-primary mb-3">
             Places to Visit
           </p>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-foreground mb-6">
+          <h2 className="font-heading text-2xl sm:text-4xl md:text-5xl text-foreground mb-4 sm:mb-6">
             Top Bathurst Attractions
           </h2>
-          <p className="font-body text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
+          <p className="font-body text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
             From the iconic Mount Panorama to gold rush history and world-class wineries — 
             Bathurst offers unforgettable experiences for every traveller.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {attractions.map((attraction) => (
             <article
               key={attraction.title}

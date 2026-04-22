@@ -28,31 +28,31 @@ const BookingWidget = () => {
   return (
     <section id="tours" className="section-padding bg-muted/50">
       <div className="container-narrow">
-        <div className="text-center mb-12">
-          <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-3">
+        <div className="text-center mb-8 sm:mb-12">
+          <p className="font-body text-xs sm:text-sm uppercase tracking-[0.2em] text-primary mb-3">
             🎫 Book Online
           </p>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-foreground mb-6">
+          <h2 className="font-heading text-2xl sm:text-4xl md:text-5xl text-foreground mb-4 sm:mb-6">
             Book Bathurst Adventures
           </h2>
-          <p className="font-body text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
+          <p className="font-body text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
             Browse and book the best tours, activities, and experiences in and around Bathurst.
           </p>
         </div>
 
         <div
           id="gyg-widget-container"
-          className="min-h-[300px] flex items-center justify-center"
+          className="min-h-[300px] flex items-center justify-center overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0"
         >
           <p className="font-body text-muted-foreground">Loading tours...</p>
         </div>
 
-        <div className="text-center mt-10">
+        <div className="text-center mt-8 sm:mt-10">
           <a
             href="https://www.getyourguide.com/bathurst-l97232/?partner_id=0IQTGX8&utm_medium=online_publisher"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-3 rounded-lg bg-primary text-primary-foreground font-body font-medium text-base hover:opacity-90 transition-opacity"
+            className="inline-block px-6 sm:px-8 py-3 rounded-lg bg-primary text-primary-foreground font-body font-medium text-sm sm:text-base hover:opacity-90 transition-opacity"
           >
             View All Bathurst Tours →
           </a>
