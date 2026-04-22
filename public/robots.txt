@@ -43,8 +43,7 @@ Disallow: /wp-content/
 Disallow: /wp-includes/
 Disallow: /xmlrpc.php
 
-# --- Sitemaps ---
-Sitemap: https://bathurstaccommodation.com/sitemap.xml
+# --- Sitemaps (Rank Math style) ---
 Sitemap: https://bathurstaccommodation.com/sitemap_index.xml
 Sitemap: https://bathurstaccommodation.com/page-sitemap.xml
 Sitemap: https://bathurstaccommodation.com/post-sitemap.xml
