@@ -5,6 +5,59 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import FAQSection from "@/components/FAQSection";
+import SEOContent from "@/components/SEOContent";
+
+const attractionsSeoSections = [
+  {
+    heading: "Things to Do in Bathurst NSW: A Complete Visitor Guide",
+    body: [
+      "Bathurst is one of regional Australia's most diverse short-break destinations. In a single weekend you can drive a world-famous motor-racing circuit, pan for real gold, walk through colonial sandstone streetscapes, taste cool-climate wines and watch a sunrise hot-air balloon glide over rolling farmland. The city sits 200 km west of Sydney via the Great Western Highway, making it a comfortable 3-hour drive or a scenic train journey on the NSW TrainLink Bathurst Bullet.",
+      "Whether you arrive for the Bathurst 1000 V8 Supercars race, a school-holiday family trip, a romantic winery weekend or a heritage history tour, the attractions below are the most popular and highly rated experiences in Bathurst NSW. Most are open year-round, many are free or low-cost, and several are fully accessible for visitors with limited mobility, prams or wheelchairs.",
+    ],
+  },
+  {
+    heading: "Mount Panorama Circuit & Motorsport Heritage",
+    body: [
+      "Mount Panorama (also known by its traditional Wiradjuri name Wahluu) is Bathurst's defining landmark. The 6.213 km circuit climbs 174 metres up the side of the mountain through legendary corners such as Hell Corner, The Cutting, Skyline, The Esses, Forrest's Elbow and The Chase. Outside race events the track is a public road open to standard traffic at a 60 km/h speed limit, so any visitor can drive the full lap for free.",
+      "At the foot of the mountain, the National Motor Racing Museum showcases decades of Australian touring car, Formula 1 and motorcycle history, including original Holden vs Ford rivalry cars, trophies and memorabilia. The Mount Panorama Lookout, the McPhillamy Park picnic area and the Sir Joseph Banks Native Flora Reserve offer panoramic views and a quieter side of the mountain.",
+    ],
+  },
+  {
+    heading: "Heritage, Museums & Family Attractions",
+    body: [
+      "The Australian Fossil & Mineral Museum on Howick Street holds the internationally significant Somerville Collection of minerals, gemstones and fossils, including a full-size Tyrannosaurus rex skeleton replica that delights children. Just 7 km away, the Bathurst Goldfields recreates a 1850s mining camp where families can pan for real gold, ride the mine railway and meet costumed interpreters.",
+      "Other heritage highlights include Abercrombie House (one of Australia's grandest 1870s mansions), Old Government Cottage, the Bathurst Court House precinct, Chifley Home (former PM Ben Chifley's residence) and the heritage-listed Machattie Park with its Crago Fountain, begonia house and Victorian-era bandstand. The Bathurst Regional Art Gallery hosts the prestigious Hill End Art Prize and free rotating exhibitions from leading Australian artists.",
+    ],
+  },
+  {
+    heading: "Wineries, Nature Reserves & Day Trips",
+    body: [
+      "The Bathurst region is the gateway to the Central West NSW wine country. Local cellar doors include Renzaglia Wines, Vale Creek Wines, Winburndale Wines and Stockman's Ridge, while the world-famous Orange wine region is only 40 minutes away with dozens of producers along the Mount Canobolas wine trail. Mudgee, Rylstone and Millthorpe round out a perfect long-weekend wine itinerary.",
+      "Outdoor lovers can explore Evans Crown Nature Reserve (granite tors and panoramic views), Ben Chifley Dam (picnics and birdwatching), Sofala (Australia's oldest surviving gold-rush town), Hill End Historic Site, Abercrombie Caves and the Macquarie River walking trails. Day trips to Jenolan Caves, the Blue Mountains, Lithgow and Mudgee are all within 60–90 minutes of central Bathurst.",
+    ],
+  },
+];
+
+const attractionsKeywords = [
+  "things to do in Bathurst",
+  "Bathurst attractions",
+  "Mount Panorama Circuit",
+  "National Motor Racing Museum",
+  "Bathurst Goldfields",
+  "Australian Fossil and Mineral Museum",
+  "Abercrombie House Bathurst",
+  "Machattie Park",
+  "Bathurst Regional Art Gallery",
+  "wineries near Bathurst",
+  "Orange wine region",
+  "Evans Crown Nature Reserve",
+  "Sofala NSW",
+  "Hill End Historic Site",
+  "Abercrombie Caves",
+  "Jenolan Caves day trip",
+  "family things to do Bathurst",
+  "free things to do Bathurst NSW",
+];
 
 const attractionsFaqs = [
   {
@@ -124,13 +177,23 @@ const AttractionsPage = () => {
     touristType: ["Adventure tourists", "Cultural tourists", "Food tourists"],
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${window.location.origin}/` },
+      { "@type": "ListItem", position: 2, name: "Attractions", item: `${window.location.origin}/attractions` },
+    ],
+  };
+
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Top Attractions in Bathurst NSW | Things to See & Do"
-        description="Explore 9 top-rated attractions in Bathurst NSW — Mount Panorama Circuit, gold-rush heritage, wineries, Machattie Park, Abercrombie House & nature reserves. Free & paid activities for families."
+        title="Top 25+ Attractions in Bathurst NSW | Things to See & Do (2026 Guide)"
+        description="The complete guide to attractions in Bathurst NSW — Mount Panorama Circuit, National Motor Racing Museum, Bathurst Goldfields, Abercrombie House, Machattie Park, wineries, nature reserves & free family activities. Local tips, prices & opening hours."
+        keywords="things to do in Bathurst, Bathurst attractions, Mount Panorama Circuit, National Motor Racing Museum, Bathurst Goldfields, Abercrombie House, Machattie Park, wineries near Bathurst, Evans Crown, Hill End, Sofala, family activities Bathurst, free attractions Bathurst NSW"
         canonicalPath="/attractions"
-        structuredData={structuredData}
+        structuredData={[structuredData, attractionsFaqSchema, breadcrumbSchema]}
       />
       <Navbar />
       <main className="pt-24 pb-16">
@@ -215,6 +278,12 @@ const AttractionsPage = () => {
             </div>
           </div>
         </div>
+
+        <SEOContent
+          intro="Looking for the best things to do in Bathurst NSW? This in-depth guide covers the city's most popular attractions, hidden local gems and family-friendly experiences across motorsport, heritage, food, wine and the outdoors."
+          sections={attractionsSeoSections}
+          keywordsCloud={attractionsKeywords}
+        />
 
         <FAQSection
           faqs={attractionsFaqs}

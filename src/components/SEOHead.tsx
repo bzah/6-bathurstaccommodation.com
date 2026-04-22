@@ -5,10 +5,11 @@ interface SEOHeadProps {
   description: string;
   canonicalPath?: string;
   ogImage?: string;
-  structuredData?: Record<string, unknown>;
+  keywords?: string;
+  structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const SEOHead = ({ title, description, canonicalPath, ogImage, structuredData }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonicalPath, ogImage, keywords, structuredData }: SEOHeadProps) => {
   useEffect(() => {
     document.title = title;
 
@@ -23,10 +24,17 @@ const SEOHead = ({ title, description, canonicalPath, ogImage, structuredData }:
     };
 
     setMeta("description", description);
+    if (keywords) setMeta("keywords", keywords);
     setMeta("og:title", title, "property");
     setMeta("og:description", description, "property");
     setMeta("og:type", "article", "property");
-    if (ogImage) setMeta("og:image", ogImage, "property");
+    setMeta("twitter:card", "summary_large_image");
+    setMeta("twitter:title", title);
+    setMeta("twitter:description", description);
+    if (ogImage) {
+      setMeta("og:image", ogImage, "property");
+      setMeta("twitter:image", ogImage);
+    }
     if (canonicalPath) {
       setMeta("og:url", `${window.location.origin}${canonicalPath}`, "property");
       let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
@@ -38,22 +46,23 @@ const SEOHead = ({ title, description, canonicalPath, ogImage, structuredData }:
       link.setAttribute("href", `${window.location.origin}${canonicalPath}`);
     }
 
-    // Structured data
-    const existingScript = document.querySelector('script[data-seo="structured-data"]');
-    if (existingScript) existingScript.remove();
+    // Structured data — supports a single object or an array of schemas
+    document.querySelectorAll('script[data-seo="structured-data"]').forEach((s) => s.remove());
     if (structuredData) {
-      const script = document.createElement("script");
-      script.setAttribute("type", "application/ld+json");
-      script.setAttribute("data-seo", "structured-data");
-      script.textContent = JSON.stringify(structuredData);
-      document.head.appendChild(script);
+      const schemas = Array.isArray(structuredData) ? structuredData : [structuredData];
+      schemas.forEach((schema) => {
+        const script = document.createElement("script");
+        script.setAttribute("type", "application/ld+json");
+        script.setAttribute("data-seo", "structured-data");
+        script.textContent = JSON.stringify(schema);
+        document.head.appendChild(script);
+      });
     }
 
     return () => {
-      const script = document.querySelector('script[data-seo="structured-data"]');
-      if (script) script.remove();
+      document.querySelectorAll('script[data-seo="structured-data"]').forEach((s) => s.remove());
     };
-  }, [title, description, canonicalPath, ogImage, structuredData]);
+  }, [title, description, canonicalPath, ogImage, keywords, structuredData]);
 
   return null;
 };

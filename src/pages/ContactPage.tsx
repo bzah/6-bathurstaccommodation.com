@@ -68,8 +68,9 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Contact Us | Bathurst Accommodation"
-        description="Get in touch with the Bathurst Accommodation team. Questions about places to stay, tours, or attractions in Bathurst NSW? We're here to help."
+        title="Contact Bathurst Accommodation | Travel Help, Listings & Press Enquiries"
+        description="Contact the Bathurst Accommodation team for help finding places to stay in Bathurst NSW, suggesting a property listing, partnership and press enquiries, or feedback on our guides to motels, hotels, tours and attractions near Mount Panorama."
+        keywords="contact Bathurst Accommodation, Bathurst travel help, Bathurst NSW contact, list my Bathurst property, Bathurst tourism contact, Mount Panorama accommodation contact"
         canonicalPath="/contact"
       />
       <Navbar />

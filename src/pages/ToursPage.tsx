@@ -6,6 +6,52 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import FAQSection from "@/components/FAQSection";
+import SEOContent from "@/components/SEOContent";
+
+const toursSeoSections = [
+  {
+    heading: "Bathurst Tours, Activities & Experiences",
+    body: [
+      "Bathurst and the surrounding Central West NSW are packed with bookable experiences for every interest — motorsport, heritage, food, wine, adventure and nature. From hot-laps of the Mount Panorama Circuit and guided gold-panning at the Bathurst Goldfields, to cellar-door wine trails through Orange and Mudgee, sunrise hot-air balloon flights and underground cave tours at Jenolan and Abercrombie, there is something for every traveller and every season.",
+      "Most Bathurst tours can be booked online with instant confirmation and free cancellation up to 24 hours before departure. Half-day tours are perfect for travellers on a tight schedule, while full-day and multi-day packages allow you to explore further afield, combining Bathurst with day trips to the Blue Mountains, Lithgow Zig Zag Railway, Hill End ghost town and the Capertee Valley.",
+    ],
+  },
+  {
+    heading: "Wine Tours, Food Trails & Cultural Experiences",
+    body: [
+      "The Central West Wine Trail visits cellar doors across Bathurst, Orange, Mudgee and Millthorpe, sampling award-winning cool-climate Chardonnay, Pinot Noir, Shiraz and sparkling. Many tours include lunch at a vineyard restaurant, stops at local cheese makers, olive groves and craft breweries, and pickup directly from your Bathurst accommodation.",
+      "For a deeper cultural experience, join a Wiradjuri-led walking tour along the Macquarie River to learn about Australia's oldest continuous culture, take a heritage architecture walk through the CBD's sandstone precinct, or attend a seasonal event such as the Bathurst Winter Festival, Inland Sea of Sound music festival or the Bathurst Edible Garden Trail.",
+    ],
+  },
+  {
+    heading: "Adventure & Outdoor Tours Near Bathurst",
+    body: [
+      "Adrenaline lovers can enjoy guided 4WD adventures through the Turon goldfields, mountain biking on the Mount Panorama trail network, kayaking and stand-up paddleboarding on the Macquarie River, rock climbing at Evans Crown, horse-riding farm experiences and astronomy nights under the dark Central Tablelands sky. Sunrise hot-air ballooning over the Bathurst countryside is consistently rated one of the best aerial experiences in NSW.",
+      "Family-friendly options include the Bathurst Goldfields gold-panning experience, the Australian Fossil & Mineral Museum interactive tours, alpaca farm visits, pony rides and seasonal pick-your-own berry farms. School-holiday programmes regularly run at the National Motor Racing Museum and the Bathurst Regional Art Gallery.",
+    ],
+  },
+];
+
+const toursKeywords = [
+  "Bathurst tours",
+  "things to do Bathurst",
+  "Mount Panorama tour",
+  "Bathurst wine tours",
+  "Orange wine tours",
+  "Central West wine trail",
+  "Bathurst hot air balloon",
+  "Abercrombie Caves tour",
+  "Jenolan Caves tour",
+  "heritage walking tour Bathurst",
+  "Bathurst Goldfields experience",
+  "family activities Bathurst",
+  "adventure tours NSW Central West",
+  "GetYourGuide Bathurst",
+  "Bathurst day trips",
+  "kayaking Macquarie River",
+  "Hill End tour",
+  "Bathurst seasonal events",
+];
 
 const toursFaqs = [
   {
@@ -123,13 +169,23 @@ const ToursPage = () => {
     touristType: ["Adventure tourists", "Cultural tourists", "Food tourists"],
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${window.location.origin}/` },
+      { "@type": "ListItem", position: 2, name: "Tours", item: `${window.location.origin}/tours` },
+    ],
+  };
+
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Bathurst Tours & Experiences | Book Activities in Bathurst NSW"
-        description="Book top-rated Bathurst tours & activities — wine trails, Mount Panorama circuit drives, heritage walks, hot air ballooning & Abercrombie Caves. Instant confirmation available."
+        title="Bathurst Tours & Activities 2026 | Wine Trails, Mount Panorama, Caves & Ballooning"
+        description="Book the best Bathurst tours and Central West NSW experiences — Mount Panorama circuit drives, Orange & Mudgee wine trails, Bathurst Goldfields, Jenolan & Abercrombie Caves, sunrise hot-air ballooning, heritage walks and family activities. Instant confirmation, free cancellation."
+        keywords="Bathurst tours, Bathurst activities, Mount Panorama tour, Orange wine tour, Mudgee wine tour, Central West wine trail, Bathurst hot air balloon, Jenolan Caves tour, Abercrombie Caves, heritage walking tour Bathurst, Bathurst Goldfields experience, family activities Bathurst, GetYourGuide Bathurst, Bathurst day trips, kayaking Macquarie River"
         canonicalPath="/tours"
-        structuredData={structuredData}
+        structuredData={[structuredData, toursFaqSchema, breadcrumbSchema]}
       />
       <Navbar />
       <main className="pt-24 pb-16">
@@ -247,6 +303,12 @@ const ToursPage = () => {
             </div>
           </div>
         </div>
+
+        <SEOContent
+          intro="Discover the most popular Bathurst tours, day trips and bookable experiences across the Central West NSW. Compare wine trails, cave tours, motorsport experiences, hot-air ballooning and family activities — all bookable online with instant confirmation."
+          sections={toursSeoSections}
+          keywordsCloud={toursKeywords}
+        />
 
         <FAQSection
           faqs={toursFaqs}
