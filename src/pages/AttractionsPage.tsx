@@ -190,7 +190,7 @@ const AttractionsPage = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Top 25+ Attractions in Bathurst NSW | Things to See & Do (2026 Guide)"
-        description="The complete guide to attractions in Bathurst NSW — Mount Panorama Circuit, National Motor Racing Museum, Bathurst Goldfields, Abercrombie House, Machattie Park, wineries, nature reserves & free family activities. Local tips, prices & opening hours."
+        description="Discover 25+ top attractions in Bathurst NSW: Mount Panorama, Motor Racing Museum, Goldfields, Abercrombie House, wineries, parks & family fun."
         keywords="things to do in Bathurst, Bathurst attractions, Mount Panorama Circuit, National Motor Racing Museum, Bathurst Goldfields, Abercrombie House, Machattie Park, wineries near Bathurst, Evans Crown, Hill End, Sofala, family activities Bathurst, free attractions Bathurst NSW"
         canonicalPath="/attractions"
         structuredData={[structuredData, attractionsFaqSchema, breadcrumbSchema]}

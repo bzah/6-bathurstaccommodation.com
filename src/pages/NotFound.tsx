@@ -11,7 +11,7 @@ const NotFound = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Page Not Found | Bathurst Accommodation"
-        description="The page you're looking for doesn't exist. Explore accommodation, attractions, and tours in Bathurst NSW."
+        description="404 — the page you're looking for doesn't exist. Explore the best accommodation, attractions and tours in Bathurst NSW from our homepage instead."
       />
       <Navbar />
       <main className="pt-24 pb-16">

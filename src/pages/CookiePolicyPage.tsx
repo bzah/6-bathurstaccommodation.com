@@ -7,7 +7,7 @@ const CookiePolicyPage = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Cookie Policy | Bathurst Accommodation"
-        description="Learn about how BathurstAccommodation.com uses cookies and similar technologies to improve your browsing experience."
+        description="Cookie policy for BathurstAccommodation.com — learn how we use cookies, analytics & similar tech to improve your browsing experience and your choices."
         canonicalPath="/cookie-policy"
       />
       <Navbar />

@@ -182,7 +182,7 @@ const ToursPage = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Bathurst Tours & Activities 2026 | Wine Trails, Mount Panorama, Caves & Ballooning"
-        description="Book the best Bathurst tours and Central West NSW experiences — Mount Panorama circuit drives, Orange & Mudgee wine trails, Bathurst Goldfields, Jenolan & Abercrombie Caves, sunrise hot-air ballooning, heritage walks and family activities. Instant confirmation, free cancellation."
+        description="Book Bathurst tours & Central West NSW activities: Mount Panorama drives, Orange & Mudgee wine trails, caves, ballooning & heritage walks. Free cancellation."
         keywords="Bathurst tours, Bathurst activities, Mount Panorama tour, Orange wine tour, Mudgee wine tour, Central West wine trail, Bathurst hot air balloon, Jenolan Caves tour, Abercrombie Caves, heritage walking tour Bathurst, Bathurst Goldfields experience, family activities Bathurst, GetYourGuide Bathurst, Bathurst day trips, kayaking Macquarie River"
         canonicalPath="/tours"
         structuredData={[structuredData, toursFaqSchema, breadcrumbSchema]}
