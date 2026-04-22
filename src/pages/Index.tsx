@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import FAQSection from "@/components/FAQSection";
 import SEOContent from "@/components/SEOContent";
+import AffiliateGrid from "@/components/AffiliateGrid";
 
 const homeSeoSections = [
   {
@@ -228,6 +229,7 @@ const Index = () => {
       <Activities />
       <BookingWidget />
       <Blog />
+      <AffiliateGrid />
       <SEOContent
         intro="Planning a trip to Bathurst, NSW? This page brings together the most useful local knowledge about Bathurst accommodation, attractions, tours and travel logistics so you can build the perfect itinerary in minutes."
         sections={homeSeoSections}
