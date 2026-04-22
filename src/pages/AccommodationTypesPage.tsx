@@ -5,6 +5,59 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import FAQSection from "@/components/FAQSection";
+import SEOContent from "@/components/SEOContent";
+
+const accommodationSeoSections = [
+  {
+    heading: "Bathurst Accommodation: Compare Every Type of Stay",
+    body: [
+      "Bathurst, NSW offers one of the widest accommodation mixes of any regional city in Australia. From budget motels along the Great Western Highway to luxury heritage hotels, riverside caravan parks, self-contained Airbnb rentals, romantic country B&Bs and farm-stay cottages, there is a perfect fit for every traveller and every budget.",
+      "Average nightly rates start around $30 for unpowered camp sites and $90 for budget motel rooms, climb to $150–$280 for full-service hotels and B&Bs, and can exceed $500 per night for premium homes during the Bathurst 1000 race week. Booking ahead — especially for October events and school holidays — is the single most important tip for securing the best Bathurst accommodation deals.",
+    ],
+  },
+  {
+    heading: "Choosing Between Motels, Hotels, Cabins & Self-Contained Stays",
+    body: [
+      "Bathurst motels remain the most popular choice for couples, race-goers and short-stay travellers. They typically offer free on-site parking, free Wi-Fi, ducted heating, en-suite bathrooms, tea and coffee facilities, and continental breakfast. Many are within a 5-minute drive of Mount Panorama Circuit and the Bathurst CBD.",
+      "Full-service hotels such as Rydges Mount Panorama and Quest Bathurst add restaurants, bars, swimming pools, gyms, room service and conference facilities — perfect for business travellers and longer stays. Self-contained Airbnb apartments, holiday houses and farm cottages suit families and groups who want kitchens, multiple bedrooms, laundry facilities and outdoor space, while bed & breakfasts deliver heritage charm, home-cooked breakfasts and personal hospitality.",
+    ],
+  },
+  {
+    heading: "Caravan Parks, Camping & Pet-Friendly Stays",
+    body: [
+      "Bathurst's caravan parks — including Bathurst Panorama Holiday Park, BIG4 Bathurst Park and Jaybee Caravan Park — offer powered and unpowered sites, ensuite cabins, camp kitchens, swimming pools, jumping pillows and family bathrooms. They are a popular choice for road-trippers, grey nomads and families who want affordable accommodation with space to move.",
+      "Pet-friendly accommodation is widely available across motels, cabins and rural Airbnb listings. Always confirm pet policies (size, breed, number, indoor/outdoor) directly with the property before booking. Several venues also welcome assistance animals and offer accessible rooms with grab-rails, walk-in showers and step-free entry.",
+    ],
+  },
+  {
+    heading: "Booking Tips for the Bathurst 1000 & Peak Events",
+    body: [
+      "The Repco Bathurst 1000 in early October is Australia's biggest motorsport event and accommodation books out 6–12 months in advance. Expect minimum-night stays (often 3–5 nights), upfront payment, strict cancellation policies and rates 3–5x higher than normal. If Bathurst is fully booked, consider nearby Orange (40 min), Blayney (25 min), Lithgow (50 min), Oberon (55 min) or Cowra (75 min) and commute in for the day.",
+      "Other peak periods include Easter, the April school holidays, the Bathurst 12 Hour endurance race in February, Bathurst Winter Festival in July and the Bathurst Spring Spectacular in October. For the best value, target weekdays in March–May or September (excluding race week) when many properties offer two-night packages with breakfast, wine tasting vouchers or museum entry included.",
+    ],
+  },
+];
+
+const accommodationKeywords = [
+  "Bathurst accommodation types",
+  "motels Bathurst NSW",
+  "hotels Bathurst",
+  "Bathurst caravan parks",
+  "Airbnb Bathurst NSW",
+  "Bathurst B&B",
+  "pet friendly motels Bathurst",
+  "family caravan parks Bathurst",
+  "Mount Panorama hotels",
+  "Bathurst 1000 accommodation",
+  "Rydges Mount Panorama",
+  "cheap accommodation Bathurst",
+  "luxury stays Bathurst",
+  "self contained Bathurst",
+  "Bathurst CBD motels",
+  "farm stay near Bathurst",
+  "Bathurst romantic getaway",
+  "long stay accommodation Bathurst",
+];
 
 const accommodationFaqs = [
   {
