@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -6,9 +7,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-heading text-xl text-background mb-4">
-              <span className="text-primary">Bathurst</span>Accommodation
-            </h3>
+            <div className="flex items-center gap-2 mb-4">
+              <img src={logo} alt="Bathurst Accommodation logo" loading="lazy" width={40} height={40} className="h-10 w-10 object-contain" />
+              <h3 className="font-heading text-xl text-background">
+                <span className="text-primary">Bathurst</span>Accommodation
+              </h3>
+            </div>
             <p className="font-body text-sm text-background/60 leading-relaxed">
               Your guide to the best accommodation in Bathurst, NSW. Discover places to stay, 
               top attractions, tours, and activities in Australia's oldest inland city.
