@@ -166,6 +166,7 @@ const Index = () => {
         keywords="bathurst accommodation, accommodation bathurst, accommodation bathurst nsw, places to stay in bathurst, bathurst motels, bathurst hotels, mount panorama accommodation, bathurst 1000 accommodation, caravan parks bathurst, airbnb bathurst, b&b bathurst, pet friendly bathurst, family accommodation bathurst, central west nsw stays"
         canonicalPath="/"
         structuredData={[structuredData, localBusinessSchema, faqStructuredData]}
+        breadcrumbs={[{ name: "Home", path: "/" }]}
       />
       <Navbar />
       <Hero />
