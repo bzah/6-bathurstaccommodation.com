@@ -45,7 +45,7 @@ const AboutPage = () => {
     <div className="min-h-screen">
       <SEOHead
         title="About Bathurst Accommodation | Independent Local Guide to Bathurst NSW Stays"
-        description="BathurstAccommodation.com is an independent local guide helping visitors find the best places to stay in Bathurst NSW — motels, hotels, caravan parks, Airbnb and B&Bs near Mount Panorama. Learn about our mission, local expertise and how we curate accommodation across Australia's oldest inland city."
+        description="BathurstAccommodation.com is an independent local guide to the best motels, hotels, Airbnb & B&Bs near Mount Panorama in Bathurst NSW, Australia."
         keywords="about Bathurst Accommodation, Bathurst travel guide, local Bathurst NSW guide, Bathurst tourism, Mount Panorama travel, Central West NSW guide, independent accommodation guide Bathurst"
         canonicalPath="/about"
         structuredData={structuredData}
