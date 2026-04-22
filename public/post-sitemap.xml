@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="//bathurstaccommodation.com/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+	<url>
+		<loc>https://bathurstaccommodation.com/blog</loc>
+		<lastmod>2026-04-22T12:00:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://bathurstaccommodation.com/blog/best-motels-near-mount-panorama</loc>
+		<lastmod>2026-03-28T12:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+		<image:image>
+			<image:loc>https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+			<image:title>Best Motels Near Mount Panorama</image:title>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://bathurstaccommodation.com/blog/where-to-stay-during-bathurst-1000</loc>
+		<lastmod>2026-03-15T12:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://bathurstaccommodation.com/blog/things-to-do-in-bathurst-nsw</loc>
+		<lastmod>2026-02-22T12:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://bathurstaccommodation.com/blog/bathurst-weekend-getaway</loc>
+		<lastmod>2026-04-02T12:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://bathurstaccommodation.com/blog/family-holidays-bathurst-nsw</loc>
+		<lastmod>2026-03-20T12:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://bathurstaccommodation.com/blog/bathurst-in-winter</loc>
+		<lastmod>2026-03-05T12:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://bathurstaccommodation.com/blog/pet-friendly-accommodation-bathurst</loc>
+		<lastmod>2026-02-10T12:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+</urlset>
