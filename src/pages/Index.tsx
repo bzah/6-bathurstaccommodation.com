@@ -128,10 +128,11 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Bathurst Accommodation | Best Hotels, Motels & Stays Near Mount Panorama"
-        description="Find the best accommodation in Bathurst NSW. Compare motels, hotels, caravan parks, Airbnb & B&Bs near Mount Panorama. Book tours, explore attractions & plan your perfect trip."
+        title="Bathurst Accommodation NSW | Hotels, Motels, Airbnb & Stays Near Mount Panorama"
+        description="The complete guide to accommodation in Bathurst NSW. Compare 100+ motels, hotels, caravan parks, Airbnb rentals & B&Bs near Mount Panorama, the CBD & Central West wineries. Race-week tips, family stays, pet-friendly & luxury options."
+        keywords="bathurst accommodation, accommodation bathurst, accommodation bathurst nsw, places to stay in bathurst, bathurst motels, bathurst hotels, mount panorama accommodation, bathurst 1000 accommodation, caravan parks bathurst, airbnb bathurst, b&b bathurst, pet friendly bathurst, family accommodation bathurst, central west nsw stays"
         canonicalPath="/"
-        structuredData={structuredData}
+        structuredData={[structuredData, faqStructuredData]}
       />
       <Navbar />
       <Hero />
@@ -140,6 +141,11 @@ const Index = () => {
       <Activities />
       <BookingWidget />
       <Blog />
+      <SEOContent
+        intro="Planning a trip to Bathurst, NSW? This page brings together the most useful local knowledge about Bathurst accommodation, attractions, tours and travel logistics so you can build the perfect itinerary in minutes."
+        sections={homeSeoSections}
+        keywordsCloud={homeKeywords}
+      />
       <FAQSection faqs={homeFaqs} structuredData={faqStructuredData} />
       <CtaSection />
       <Footer />
