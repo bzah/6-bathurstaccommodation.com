@@ -1,20 +1,17 @@
 # ============================================================
 # BathurstAccommodation.com — robots.txt
+# Allows all major search & social crawlers, blocks legacy
+# WordPress paths, and points to all sitemaps.
 # ============================================================
 
+# --- Major search engines & social bots ---
 User-agent: Googlebot
 Allow: /
 
+User-agent: Googlebot-Image
+Allow: /
+
 User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: LinkedInBot
 Allow: /
 
 User-agent: Slurp
@@ -26,17 +23,28 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# --- All other bots ---
 User-agent: *
 Allow: /
 
-# Block old WordPress paths (now return 410 via .htaccess)
+# Block legacy WordPress paths (return 410 via .htaccess)
 Disallow: /wp-admin/
 Disallow: /wp-login.php
 Disallow: /wp-content/
 Disallow: /wp-includes/
 Disallow: /xmlrpc.php
 
-# Sitemaps (Rank Math style — index + per-type sitemaps)
+# --- Sitemaps ---
+Sitemap: https://bathurstaccommodation.com/sitemap.xml
 Sitemap: https://bathurstaccommodation.com/sitemap_index.xml
 Sitemap: https://bathurstaccommodation.com/page-sitemap.xml
 Sitemap: https://bathurstaccommodation.com/post-sitemap.xml
