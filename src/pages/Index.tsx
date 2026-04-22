@@ -9,6 +9,59 @@ import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import FAQSection from "@/components/FAQSection";
+import SEOContent from "@/components/SEOContent";
+
+const homeSeoSections = [
+  {
+    heading: "Discover the Best Accommodation in Bathurst NSW",
+    body: [
+      "Bathurst, located 200 km west of Sydney in the heart of the New South Wales Central Tablelands, is Australia's oldest inland city and one of the most rewarding regional destinations in the country. Visitors arrive year-round for the Bathurst 1000 motorsport festival, gold-rush heritage trails, cool-climate wineries, world-class museums, scenic bushwalks and the relaxed café culture along George Street.",
+      "Whether you are searching for a motel near Mount Panorama, a family caravan park, a luxury hotel suite, a romantic bed & breakfast or a self-contained Airbnb rental in the Bathurst CBD, this guide brings together the most useful information about places to stay in Bathurst NSW. We cover prices, neighbourhoods, amenities, accessibility, pet policies and seasonal availability so that you can book with complete confidence.",
+    ],
+  },
+  {
+    heading: "Where to Stay: Mount Panorama, CBD & Surrounding Suburbs",
+    body: [
+      "Bathurst accommodation is concentrated in three main areas. Properties near Mount Panorama Circuit (Conrod Straight, Panorama Avenue and Wahluu) put you within walking distance of the legendary 6.213 km racetrack and the National Motor Racing Museum. Stays in the CBD around George Street, William Street and Russell Street are ideal for foodies, heritage walkers and travellers who want easy access to restaurants, the Bathurst Regional Art Gallery and Machattie Park.",
+      "Outer suburbs and rural retreats — including Kelso, West Bathurst, Eglinton, Perthville and Sofala — offer larger family homes, farm stays and quiet country B&Bs. They are popular with groups attending the Bathurst 1000, weekend wine-trail visitors and travellers who want a peaceful base for exploring Hill End, Abercrombie Caves, the Macquarie River and the wider Central West NSW region.",
+    ],
+  },
+  {
+    heading: "Best Time to Visit Bathurst NSW",
+    body: [
+      "The shoulder seasons of autumn (March–May) and spring (September–November) deliver the most enjoyable weather for sightseeing, with mild days, cool nights and stunning natural colour. Spring brings wildflowers and the famous Bathurst Spring Spectacular at Machattie Park, while autumn paints the heritage streetscape in golden leaves — perfect for photography.",
+      "October is dominated by the Bathurst 1000 Supercars race, when accommodation books out 6–12 months in advance and rates rise sharply. November to February delivers warm days for wine touring, kayaking on the Macquarie River and outdoor dining. Winter (June–August) is cooler with occasional frost and is the ideal time for cosy retreats, fireside dining and quieter heritage tours.",
+    ],
+  },
+  {
+    heading: "Things to Do Beyond Mount Panorama",
+    body: [
+      "Drive the Mount Panorama Circuit for free as a public road, then dive deeper into the city's story at the Australian Fossil & Mineral Museum, Bathurst Goldfields, Abercrombie House and the Bathurst Regional Art Gallery. Outdoor lovers can explore Evans Crown Nature Reserve, Mount Canobolas, Ben Chifley Dam, Sofala ghost town and the Wiradjuri walking tracks along the Macquarie River.",
+      "The surrounding Central West wine region — including Orange, Mudgee, Millthorpe and Rylstone — is home to award-winning cool-climate Chardonnay, Shiraz and sparkling. Combine cellar-door visits with farm-gate produce, paddock-to-plate restaurants and weekend farmers' markets for an unforgettable food and wine break in regional NSW.",
+    ],
+  },
+];
+
+const homeKeywords = [
+  "Bathurst accommodation",
+  "accommodation Bathurst NSW",
+  "places to stay in Bathurst",
+  "motels Bathurst",
+  "hotels Bathurst NSW",
+  "Mount Panorama accommodation",
+  "Bathurst 1000 accommodation",
+  "caravan parks Bathurst",
+  "Airbnb Bathurst",
+  "B&B Bathurst NSW",
+  "pet friendly accommodation Bathurst",
+  "family accommodation Bathurst",
+  "cheap motels Bathurst",
+  "luxury hotels Bathurst",
+  "Central West NSW stays",
+  "weekend getaway Bathurst",
+  "Bathurst CBD hotels",
+  "Bathurst race week stays",
+];
 
 const homeFaqs = [
   {
