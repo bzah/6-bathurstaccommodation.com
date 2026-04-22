@@ -296,6 +296,12 @@ const AccommodationTypesPage = () => {
           </div>
         </div>
 
+        <SEOContent
+          intro="Use this guide to compare every type of Bathurst NSW accommodation side-by-side, with realistic 2026 prices, amenities, neighbourhood tips and booking advice for the Bathurst 1000 and other peak events."
+          sections={accommodationSeoSections}
+          keywordsCloud={accommodationKeywords}
+        />
+
         <FAQSection
           faqs={accommodationFaqs}
           structuredData={accommodationFaqSchema}

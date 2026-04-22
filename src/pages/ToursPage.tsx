@@ -304,6 +304,12 @@ const ToursPage = () => {
           </div>
         </div>
 
+        <SEOContent
+          intro="Discover the most popular Bathurst tours, day trips and bookable experiences across the Central West NSW. Compare wine trails, cave tours, motorsport experiences, hot-air ballooning and family activities — all bookable online with instant confirmation."
+          sections={toursSeoSections}
+          keywordsCloud={toursKeywords}
+        />
+
         <FAQSection
           faqs={toursFaqs}
           structuredData={toursFaqSchema}
