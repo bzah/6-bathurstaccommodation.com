@@ -41,27 +41,27 @@ const Activities = () => {
   return (
     <section id="activities" className="section-padding bg-background">
       <div className="container-narrow">
-        <div className="text-center mb-16">
-          <p className="font-body text-sm uppercase tracking-[0.2em] text-primary mb-3">
+        <div className="text-center mb-10 sm:mb-16">
+          <p className="font-body text-xs sm:text-sm uppercase tracking-[0.2em] text-primary mb-3">
             Things to Do
           </p>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-foreground mb-6">
+          <h2 className="font-heading text-2xl sm:text-4xl md:text-5xl text-foreground mb-4 sm:mb-6">
             Popular Activities Near Bathurst
           </h2>
-          <p className="font-body text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
+          <p className="font-body text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
             Whether you're looking for adventure, culture, or relaxation — there's no shortage 
             of things to do during your stay in Bathurst, NSW.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {activities.map((activity) => (
             <div
               key={activity.title}
-              className="p-6 rounded-xl bg-card border border-border hover:border-primary/30 transition-all duration-300"
+              className="p-5 sm:p-6 rounded-xl bg-card border border-border hover:border-primary/30 transition-all duration-300"
               style={{ boxShadow: "var(--shadow-card)" }}
             >
-              <span className="text-3xl mb-4 block">{activity.emoji}</span>
+              <span className="text-2xl sm:text-3xl mb-3 sm:mb-4 block">{activity.emoji}</span>
               <h3 className="font-heading text-lg text-foreground mb-2">
                 {activity.title}
               </h3>

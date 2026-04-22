@@ -19,9 +19,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-2 font-heading text-xl text-foreground">
-            <img src={logo} alt="Bathurst Accommodation logo" width={36} height={36} className="h-9 w-9 object-contain" />
-            <span><span className="text-primary">Bathurst</span>Accommodation</span>
+          <Link to="/" className="flex items-center gap-2 font-heading text-base sm:text-xl text-foreground min-w-0 flex-shrink">
+            <img src={logo} alt="Bathurst Accommodation logo" width={36} height={36} className="h-8 w-8 sm:h-9 sm:w-9 object-contain flex-shrink-0" />
+            <span className="truncate"><span className="text-primary">Bathurst</span>Accommodation</span>
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
