@@ -1,0 +1,26 @@
+{
+  "name": "Bathurst Accommodation",
+  "short_name": "Bathurst Stays",
+  "description": "Find the best accommodation, attractions and tours in Bathurst NSW.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#d4943a",
+  "lang": "en-AU",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
