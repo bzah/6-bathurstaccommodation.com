@@ -23,6 +23,7 @@ import DmcaPage from "./pages/DmcaPage.tsx";
 import LegalNoticePage from "./pages/LegalNoticePage.tsx";
 import ParentsInfoPage from "./pages/ParentsInfoPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import AnalyticsTracker from "./components/AnalyticsTracker.tsx";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <AnalyticsTracker />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/blog" element={<BlogIndex />} />
